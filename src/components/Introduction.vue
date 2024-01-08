@@ -10,8 +10,18 @@
       <h3 class="iphone">+372 53065066</h3>
       <h3 class="location">Tallinn, Estonia</h3>
       <span class="links">
-        <a class="linkedIn"><img src="src/assets/linkedin%20logo.png"></a>
-        <a class="github"><img src="src/assets/github%20logo.png"></a>
+        <a class="linkedIn" href="https://www.linkedin.com/in/rainrhni/" target="_blank">
+          <img src="src/assets/linkedin%20logo.png">
+        </a>
+        <a class="github" href="https://github.com/RainRahni" target="_blank">
+          <img src="src/assets/github%20logo.png">
+        </a>
+        <a class="facebook" href="https://www.facebook.com/rain.rahni/" target="_blank">
+          <img src="src/assets/facebooklogo.png">
+        </a>
+        <a class="instagram" href="https://www.instagram.com/rainrahni/" target="_blank">
+          <img src="src/assets/insta-logo.png">
+        </a>
       </span>
     </div>
   </main>
@@ -23,11 +33,10 @@ main {
   color: black;
   line-height: 2;
 }
-
-.github {
-  margin-left: 4%;
-  padding-left: -10px;
+a {
+  margin-right: 4%;
 }
+
 h1 {
   font-size: 55px;
 }
