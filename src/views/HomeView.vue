@@ -1,19 +1,17 @@
 
 
 <template>
-  <div class="whole">
-    <div class="intro">
-      <Introduction />
-    </div>
-  </div>
+    <section class="intro">
+      <div class="container">
+        <Introduction />
+      </div>
+    </section>
 </template>
 <style>
-.whole {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-.intro {
 
+.intro {
+  margin-left: 15%;
+  padding-top: 10%;
 }
 </style>
 <script setup>
