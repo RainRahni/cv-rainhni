@@ -33,6 +33,9 @@
         </a>
       </span>
     </div>
+    <div>
+      <img style="margin-top: 3%; border-radius: 50%" src="src/assets/Rain%20stiparengu%202023.jpg">
+    </div>
   </main>
 </template>
 <style>
