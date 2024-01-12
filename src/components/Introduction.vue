@@ -33,8 +33,8 @@
         </a>
       </span>
     </div>
-    <div>
-      <img style="margin-top: 3%; border-radius: 50%" src="src/assets/Rain%20stiparengu%202023.jpg">
+    <div style="background-color: skyblue; border-radius: 30%; width: 60%">
+      <img style="margin-top: 3%; border-radius: 50%; margin-left: 7%" src="src/assets/Rain%20stiparengu%202023.jpg">
     </div>
   </main>
 </template>

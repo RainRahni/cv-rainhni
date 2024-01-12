@@ -19,6 +19,11 @@
   padding-top: 10%;
   padding-bottom: 10%;
 }
+.about {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #badef3;
+}
 </style>
 <script setup>
 
