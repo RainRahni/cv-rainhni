@@ -17,6 +17,9 @@
         that helps people's lifes.Beyond my technical skills, I bring communication to my work. I'm also an active
         football player and enjoy spending time with friends.
       </p>
+      <a class="resume-button clickable" href="src/assets/Rain%20Rähni%20CVeng.pdf"
+         target="_blank">View
+        Resume</a>
     </div>
   </main>
 </template>
@@ -30,7 +33,18 @@ main {
 .about-text {
   margin-right: 5%;
 }
-
+.resume-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 16rem;
+  border-radius: 15%;
+  padding: 5px;
+  width: 25%;
+  color: white;
+  background-color: teal;
+}
 </style>
 <script>
 

@@ -8,7 +8,7 @@
       <br>
       <div class="info-logo">
         <img src="src/assets/mail.png">
-        <h3 class="info">rain.rahni5@gmail.com</h3>
+        <h3 class="info">rain.rahni@mail.ee</h3>
       </div>
       <div class="info-logo">
         <img src="src/assets/phone.png">
