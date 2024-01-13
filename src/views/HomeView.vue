@@ -11,6 +11,12 @@
         <About />
       </div>
     </section>
+  <section class="projects">
+      <div class="container">
+        <Projects />
+      </div>
+  </section>
+  <section></section>
 </template>
 <style>
 
@@ -24,10 +30,15 @@
   padding-bottom: 10%;
   background-color: #badef3;
 }
+.projects {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 </style>
 <script setup>
 
 import Introduction from "@/components/Introduction.vue";
 import About from "@/components/About.vue";
+import Projects from "@/components/Projects.vue";
 
 </script>
