@@ -5,11 +5,25 @@
       <div class="tech-list">
         <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Backend Development</h3>
         <div class="tech-item">
+          <img style="width: 12%;" src="src/assets/java.png">
           <div class="tech-info">
-            <div style=" width: 100%; padding-left: 20px; display: flex">
+            <div style="width: 100%">
               <h5>Java</h5>
               <span>95%</span>
             </div>
+            <progress style="width: 100%" max="100" value="70">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img src="src/assets/Java-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5>Java</h5>
+              <span>95%</span>
+            </div>
+            <progress max="100" value="70">
+            </progress>
           </div>
         </div>
       </div>
@@ -133,7 +147,6 @@
 <style>
 
 
-
 a {
   margin-right: 4%;
   color: black;
@@ -166,12 +179,23 @@ h1 {
 .tech-list {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 80%;
+  width: 100%;
   border-radius: 5%;
   padding: 3%;
 }
+.tech-item {
+  display: inline-flex;
+}
+div.tech-item div.tech-info
+div {
+  display: flex;
+  justify-content: space-between;
+}
 
-
+.tech-info {
+  padding-left: 20px;
+  width: 100%;
+}
 
 </style>
 <script setup>
