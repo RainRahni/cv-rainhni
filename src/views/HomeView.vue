@@ -33,6 +33,8 @@
 .projects {
   padding-top: 10%;
   padding-bottom: 10%;
+  padding-left: 15em;
+  padding-right: 15em;
 }
 </style>
 <script setup>

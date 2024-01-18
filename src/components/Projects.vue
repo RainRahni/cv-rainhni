@@ -1,32 +1,178 @@
 <template>
   <main>
     <div class="tech-stack">
-      <h1>Tech stack</h1>
-    </div>
+      <h1 class="skill-header">Tech stack</h1>
+      <div class="tech-list">
+        <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Backend Development</h3>
+        <div class="tech-item">
+          <div class="tech-info">
+            <div style=" width: 100%; padding-left: 20px; display: flex">
+              <h5>Java</h5>
+              <span>95%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="tech-list">
+          <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Web Development</h3>
+          <div class="tech-item">
+
+          </div>
+        </div>
+      <div class="tech-list">
+        <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Other skills</h3>
+        <div class="tech-item">
+
+        </div>
+      </div>
+      </div>
     <div class="project">
-      <h1>Project</h1>
+      <h1 class="skill-header">Project</h1>
+      <div class="project-list">
+        <div class="project-item">
+          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Room renting website</h3>
+          <a style="padding-left: 1rem; font-weight: bold;"
+             href="https://mausma.pages.taltech.ee/iti0105-2022/public/pages/room-rent-webpage-main.html" target="_blank">
+            Website address</a>
+          <h4 style="padding-left: 1rem; font-weight: bold; width: 100%">Sep-2022 to Dec-2022</h4>
+          <ul>
+            <li>
+              Developed a website with two teammates as part of a course project. The goal of the website was
+              to make renting rooms in TalTech University more comfortable
+              for both teachers and students.</li>
+            <li>
+              Used HTML, CSS, JavaScript and the
+              Bootstrap 5 framework to achieve functionality.
+              The project was managed using GitLab.
+            </li>
+          </ul>
+        </div>
+        <br>
+        <!--
+        <div class="project-item">
+          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Sudoku Idris</h3>
+          <a style="padding-left: 1rem; font-weight: bold;"
+             href="https://mausma.pages.taltech.ee/iti0105-2022/public/pages/room-rent-webpage-main.html" target="_blank">
+            Website address</a>
+          <h4 style="padding-left: 1rem; font-weight: bold">Sep-2022 to Dec-2022</h4>
+          <ul>
+            <li>
+              Developed a website with two teammates as part of a course project. The goal of the website was
+              to make renting rooms in TalTech University more comfortable for
+              both teachers and students.</li>
+            <li>
+              Used HTML, CSS, JavaScript and the
+              Bootstrap 5 framework to achieve functionality.
+              The project was managed using GitLab.
+            </li>
+          </ul>
+        </div>
+        <br>-->
+        <div class="project-item">
+          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Fitness app KOOOS</h3>
+          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/kooos-backend"
+             target="_blank"> Backend repo</a>
+          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/makkussu/kooos-gamma"
+             target="_blank">
+          Frontend repo</a>
+          <h4 style="padding-left: 1rem; font-weight: bold">Nov-2023 and ongoing</h4>
+          <ul>
+            <li>
+              Developing an app with a friend that enables users to track their exercise and
+              meal plans. App features AI chatbot that generates both plans making it easy
+              for users to reach their fitness goals without a personal coach.</li>
+            <li>
+              Used Java, PostrgreSQL and Spring Boot
+              framework to achieve functionality.
+              The project was managed using Github.
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="project-item">
+          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Calorie tracking website</h3>
+          <a style="padding-left: 1rem; font-weight: bold;"
+             href="https://mausma.pages.taltech.ee/iti0105-2022/public/pages/room-rent-webpage-main.html" target="_blank">
+            Website address</a>
+          <h4 style="padding-left: 1rem; font-weight: bold">Jan-2023 to Jan-2024</h4>
+          <ul>
+            <li>
+              Developed a website for tracking calorie intake, allowing users to add meals
+              and track their macros and calories.
+            </li>
+            <li>
+              Used Vue.js, Java, CockroachDB-hosted PostgreSQL and the
+              Spring Boot framework to achieve functionality.
+              The project was managed using GitHub.
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="project-item">
+          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Multiplayer shooting game</h3>
+          <a style="padding-left: 1rem; font-weight: bold;"
+             href="https://www.youtube.com/watch?v=R_mRNq5_lO0&ab_channel=asd" target="_blank">
+            Demo link (starts at 0:53)</a>
+          <h4 style="padding-left: 1rem; font-weight: bold">Feb-2023 to Jun-2023</h4>
+          <ul>
+            <li>
+              Developed a top-down view game in Java with two other people. The game is playable as a multiplayer game
+              and also includes an AI player that follows one of the players using
+              the A* pathfinding algorithm.
+            </li>
+            <li>
+              Used Java, Kryonet library, Gradle and the libGDX framework to achieve functionality.
+              The project was managed using GitLab.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </main>
 </template>
 <style>
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: black;
-  line-height: 2;
-}
+
+
 a {
   margin-right: 4%;
+  color: black;
+}
+a:hover {
+  background-color: white;
 }
 
 h1 {
   font-size: 55px;
 }
-.info-logo {
-  display: flex;
-  margin-top: 1%;
+.skill-header {
+  text-align: center;
+  margin-top: -5%;
 }
+
+.project-item {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 80%;
+  border-radius: 5%;
+  padding: 3%;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tech-list {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 80%;
+  border-radius: 5%;
+  padding: 3%;
+}
+
+
+
 </style>
 <script setup>
 </script>
