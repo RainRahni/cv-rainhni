@@ -7,22 +7,44 @@
         <div class="tech-item">
           <img style="width: 12%;" src="src/assets/java.png">
           <div class="tech-info">
-            <div style="width: 100%">
+            <div>
               <h5>Java</h5>
-              <span>95%</span>
+              <span>60%</span>
             </div>
-            <progress style="width: 100%" max="100" value="70">
+            <progress max="100" value="60">
             </progress>
           </div>
         </div>
         <div class="tech-item">
-          <img src="src/assets/Java-logo.png">
+          <img style="width: 12%;" src="src/assets/spring-logo.png">
           <div class="tech-info" >
             <div>
-              <h5>Java</h5>
-              <span>95%</span>
+              <h5>Spring Boot</h5>
+              <span>40%</span>
             </div>
-            <progress max="100" value="70">
+            <progress max="100" value="40">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img style="width: 12%;" src="src/assets/python-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5>Python</h5>
+              <span>40%</span>
+            </div>
+            <progress max="100" value="40">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img style="width: 12%;" src="src/assets/sql-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5>SQL</h5>
+              <span>30%</span>
+            </div>
+            <progress max="100" value="30">
             </progress>
           </div>
         </div>
@@ -197,6 +219,9 @@ div {
   width: 100%;
 }
 
+progress {
+  width: 100%;
+}
 </style>
 <script setup>
 </script>
