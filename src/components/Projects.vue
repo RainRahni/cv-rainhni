@@ -49,17 +49,79 @@
           </div>
         </div>
       </div>
-        <div class="tech-list">
-          <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Web Development</h3>
-          <div class="tech-item">
-
+      <br>
+      <div class="tech-list">
+        <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Web Development</h3>
+        <div class="tech-item">
+          <img style="width: 12%;" src="src/assets/js-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5>Javascript</h5>
+              <span>50%</span>
+            </div>
+            <progress max="100" value="50">
+            </progress>
           </div>
         </div>
+        <div class="tech-item">
+          <img style="width: 12%;" src="src/assets/html-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5>HTML</h5>
+              <span>40%</span>
+            </div>
+            <progress max="100" value="40">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img style="width: 12%;" src="src/assets/vue-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5>Vue.js</h5>
+              <span>30%</span>
+            </div>
+            <progress max="100" value="30">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img style="width: 12%;" src="src/assets/css-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5>CSS</h5>
+              <span>20%</span>
+            </div>
+            <progress max="100" value="20">
+            </progress>
+          </div>
+        </div>
+      </div>
+      <br>
       <div class="tech-list">
         <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Other skills</h3>
-        <div class="tech-item">
-
-        </div>
+          <div class="tech-item">
+            <img style="width: 14%;" src="src/assets/git-logo.png">
+            <div class="tech-info" >
+              <div>
+                <h5>Git</h5>
+                <span>40%</span>
+              </div>
+              <progress max="100" value="40">
+              </progress>
+            </div>
+          </div>
+          <div class="tech-item">
+            <img style="width: 12%;" src="src/assets/dsa-logo.png">
+            <div class="tech-info" >
+              <div>
+                <h5>Data structures & algorithms</h5>
+                <span>40%</span>
+              </div>
+              <progress max="100" value="20">
+              </progress>
+            </div>
+          </div>
       </div>
       </div>
     <div class="project">
