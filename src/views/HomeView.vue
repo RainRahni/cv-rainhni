@@ -16,7 +16,11 @@
         <Projects />
       </div>
   </section>
-  <section></section>
+  <section class="education">
+    <div class="container">
+      <Education />
+    </div>
+  </section>
 </template>
 <style>
 
@@ -42,5 +46,6 @@
 import Introduction from "@/components/Introduction.vue";
 import About from "@/components/About.vue";
 import Projects from "@/components/Projects.vue";
+import Education from "@/components/Education.vue";
 
 </script>
