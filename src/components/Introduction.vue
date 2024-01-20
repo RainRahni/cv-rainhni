@@ -1,5 +1,5 @@
 <template>
-  <main>
+    <div class="whole">
     <div>
       <h2 class="welcome" style="color: black;">Hello, I am</h2>
       <h1 class="name" style="color: black;font-weight: bold">Rain Rähni</h1>
@@ -36,13 +36,13 @@
     <div style="background-color: skyblue; border-radius: 30%; width: 60%">
       <img style="margin-top: 3%; border-radius: 50%; margin-left: 7%" src="src/assets/Rain%20stiparengu%202023.jpg">
     </div>
-  </main>
+    </div>
 </template>
 <style>
 .info {
   margin-left: 1%;
 }
-main {
+.whole {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: black;

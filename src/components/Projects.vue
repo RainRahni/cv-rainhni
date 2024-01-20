@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div class="whole">
     <div class="tech-stack">
       <h1 class="skill-header">Tech stack</h1>
       <div class="tech-list">
@@ -101,7 +101,7 @@
       <div class="tech-list">
         <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Other skills</h3>
           <div class="tech-item">
-            <img style="width: 14%;" src="src/assets/git-logo.png">
+            <img style="width: 12%;" src="src/assets/git-logo.png">
             <div class="tech-info" >
               <div>
                 <h5>Git</h5>
@@ -118,7 +118,7 @@
                 <h5>Data structures & algorithms</h5>
                 <span>40%</span>
               </div>
-              <progress max="100" value="20">
+              <progress max="100" value="40">
               </progress>
             </div>
           </div>
@@ -226,7 +226,7 @@
         </div>
       </div>
     </div>
-  </main>
+  </div>
 </template>
 <style>
 
@@ -283,6 +283,12 @@ div {
 
 progress {
   width: 100%;
+}
+.whole {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: black;
+  line-height: 2;
 }
 </style>
 <script setup>

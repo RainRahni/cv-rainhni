@@ -1,5 +1,5 @@
 <template>
-  <main>
+    <div class="whole">
     <div>
       <img style="margin-left: 15%" src="src/assets/coder.png">
     </div>
@@ -21,10 +21,10 @@
          target="_blank">View
         Resume</a>
     </div>
-  </main>
+    </div>
 </template>
 <style>
-main {
+.whole {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: black;
