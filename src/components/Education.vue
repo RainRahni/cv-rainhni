@@ -8,7 +8,9 @@
       <h1>Education</h1>
         <div class="ed-list">
           <div class="ed-item">
-              <h1> LETYS GOOO</h1>
+            <img style="width: 20%" src="src/assets/taltech-logo.jpg">
+            <div class="ed-info">
+            </div>
           </div>
         </div>
     </div>
