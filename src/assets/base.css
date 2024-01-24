@@ -4,7 +4,7 @@
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
-  --vt-c-indigo: #2c3e50;
+  --vt-c-indigo: #4b4a4a;
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
@@ -62,7 +62,7 @@ body {
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

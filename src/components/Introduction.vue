@@ -1,46 +1,50 @@
 <template>
     <div class="whole">
     <div>
-      <h2 class="welcome" style="color: black;">Hello, I am</h2>
+      <div class="box">
+        <h2 class="welcome" style="color: white;">Hello, I am</h2>
+      </div>
       <h1 class="name" style="color: black;font-weight: bold">Rain Rähni</h1>
       <h2 class="occupation"
-          style="color: black;font-weight: bold">Bachelor`s informatics student</h2>
+          style="color: black;font-weight: bold">Bachelor`s computer science student</h2>
       <br>
       <div class="info-logo">
-        <img src="src/assets/mail.png">
-        <h3 class="info">rain.rahni@mail.ee</h3>
+        <img class="logo" src="src/assets/mail.png" style="margin-top: 1%;">
+        <a href="mailto:rain.rahni@mail.ee"><h3 class="info">rain.rahni@mail.ee</h3></a>
       </div>
       <div class="info-logo">
-        <img src="src/assets/phone.png">
-        <h3 class="info">+372 53065066</h3>
+        <img class="logo" src="src/assets/phone.png">
+        <a href="tel:+37253065066"><h3 class="info">+372 53065066</h3></a>
       </div>
       <div class="info-logo">
-        <img src="src/assets/location.png">
-        <h3 class="info">Tallinn, Estonia</h3>
+        <img class="logo" src="src/assets/location.png">
+        <a href="https://www.tallinn.ee/et" target="_blank"><h3 class="info">Tallinn,   Estonia</h3></a>
       </div>
-      <span class="links">
+      <div class="links" style="padding-top: 4%">
         <a class="linkedIn" href="https://www.linkedin.com/in/rainrhni/" target="_blank">
-          <img src="src/assets/linkedin%20logo.png">
+
         </a>
+        <div></div><img class="logoTwo" src="src/assets/linkedin%20logo.png">
         <a class="github" href="https://github.com/RainRahni" target="_blank">
-          <img src="src/assets/github%20logo.png">
+          <img class="logoTwo" src="src/assets/githlogo.png">
         </a>
         <a class="facebook" href="https://www.facebook.com/rain.rahni/" target="_blank">
-          <img src="src/assets/facebooklogo.png">
+          <img class="logoTwo" src="src/assets/facebooklogo.png">
         </a>
         <a class="instagram" href="https://www.instagram.com/rainrahni/" target="_blank">
-          <img src="src/assets/insta-logo.png">
+          <img class="logoTwo" src="src/assets/insta-logo.png">
         </a>
-      </span>
+      </div>
     </div>
-    <div style="background-color: skyblue; border-radius: 30%; width: 60%">
-      <img style="margin-top: 3%; border-radius: 50%; margin-left: 7%" src="src/assets/Rain%20stiparengu%202023.jpg">
+    <div style="background-color: cornflowerblue; border-radius: 30%; width: 60%">
+      <img style="padding-top: 5%; border-radius: 50%; padding-left: 12%" src="src/assets/Rain%20stiparengu%202023.jpg">
     </div>
     </div>
 </template>
 <style>
 .info {
   margin-left: 1%;
+  width: 100%;
 }
 .whole {
   display: grid;
@@ -59,6 +63,29 @@ h1 {
   display: flex;
   margin-top: 1%;
 }
+.logo {
+  width: 3%;
+  height: 1%;
+  margin-top: 0.5%;
+}
+.logoTwo {
+  width: 3%;
+}
+.box {
+  background-color: cornflowerblue;
+  width: 20%;
+  text-align: center;
+  border-radius: 20px 20px 20px 0px;
+}
+
+h3:hover {
+  color: cornflowerblue;
+}
+a {
+  color:cornflowerblue;
+}
+
+
 </style>
 <script setup>
 </script>

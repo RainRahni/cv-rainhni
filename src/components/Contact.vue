@@ -13,7 +13,6 @@
           @rainrhni</a>
         </h3>
       </div>
-
       <div class="prof-item">
         <img style="width: 50%" src="src/assets/githlogo.png">
         <br>
@@ -36,11 +35,11 @@
         <div class="contact-me">
         <h2>Get in touch</h2>
           <div class="info-logo">
-            <img src="src/assets/mail.png">
+            <img class="logo" src="src/assets/mail.png">
             <h3 class="info">rain.rahni@mail.ee</h3>
           </div>
           <div class="info-logo">
-            <img src="src/assets/phone.png">
+            <img class="logo" src="src/assets/phone.png">
             <h3 class="info">+372 53065066</h3>
           </div>
         </div>
@@ -89,5 +88,9 @@
   justify-content: center;
   padding: 10%;
 }
-
+.logo {
+  width: 3%;
+  height: 1%;
+  margin-top: 0.5%;
+}
 </style>
