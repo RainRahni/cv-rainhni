@@ -23,7 +23,7 @@
   </section>
   <section class="recommendation">
     <div class="container">
-      <Education />
+      <Recommendation />
     </div>
   </section>
 </template>
@@ -45,6 +45,10 @@
   padding-left: 15em;
   padding-right: 15em;
 }
+.recommendation {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 </style>
 <script setup>
 
@@ -52,5 +56,6 @@ import Introduction from "@/components/Introduction.vue";
 import About from "@/components/About.vue";
 import Projects from "@/components/Projects.vue";
 import Education from "@/components/Education.vue";
+import Recommendation from "@/components/Recommendation.vue";
 
 </script>
