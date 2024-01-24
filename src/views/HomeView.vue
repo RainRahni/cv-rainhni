@@ -26,6 +26,11 @@
       <Recommendation />
     </div>
   </section>
+  <section class="contact">
+    <div class="container">
+      <Contact />
+    </div>
+  </section>
 </template>
 <style>
 
@@ -57,5 +62,6 @@ import About from "@/components/About.vue";
 import Projects from "@/components/Projects.vue";
 import Education from "@/components/Education.vue";
 import Recommendation from "@/components/Recommendation.vue";
+import Contact from "@/components/Contact.vue";
 
 </script>
