@@ -21,6 +21,11 @@
       <Education />
     </div>
   </section>
+  <section class="recommendation">
+    <div class="container">
+      <Education />
+    </div>
+  </section>
 </template>
 <style>
 
