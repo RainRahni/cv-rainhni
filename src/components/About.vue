@@ -17,7 +17,7 @@
         that helps people's lives. Beyond my technical skills, I bring communication to my work. I'm also an active
         football player and enjoy spending time with friends.
       </p>
-      <a class="resume-button clickable" href="~@/assets/Rain%20Rähni%20CVeng.pdf"
+      <a class="resume-button clickable" href="~@/assets/Rain-Rähni-CVeng.pdf"
          target="_blank"  >View
         Resume</a>
     </div>
