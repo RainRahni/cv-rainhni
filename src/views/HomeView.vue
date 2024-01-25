@@ -33,6 +33,7 @@
     <div class="container">
       <Contact />
     </div>
+    <div class="curve-top"></div>
   </section>
 </template>
 <style>
