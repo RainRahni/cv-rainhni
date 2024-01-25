@@ -5,7 +5,7 @@
 <template>
   <div class="whole">
     <div class="recommendation">
-      <h1 style="text-align: center;">Recommendations</h1>
+      <h1 style="text-align: center; padding: 5%">Recommendations</h1>
       <div class="rec-item">
         <div class="profile">
           <img src="src/assets/default-prof.png" style="width: 18%; padding: 4%">
@@ -23,7 +23,7 @@
             ojdasi9j0asfas90jjfas0jf0asjf0asjfas´fko0ifhasojfasjfaso
           </p>
           <div class="footer" style="margin-right: 3em; padding-bottom: 20px; display: flex; flex-direction: row-reverse;">
-              -January 26, 2024
+              - January 26, 2024
           </div>
       </div>
     </div>
@@ -41,6 +41,7 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5%;
+  background-color: white;
 }
 .whole {
   display: flex;

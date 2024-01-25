@@ -129,9 +129,10 @@
       <div class="project-list">
         <div class="project-item">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Room renting website</h3>
-          <a style="padding-left: 1rem; font-weight: bold;"
+          <a style="padding-left: 1rem; font-weight: bold;" class="link"
              href="https://mausma.pages.taltech.ee/iti0105-2022/public/pages/room-rent-webpage-main.html" target="_blank">
             Website address</a>
+
           <h4 style="padding-left: 1rem; font-weight: bold; width: 100%">Sep-2022 to Dec-2022</h4>
           <ul>
             <li>
@@ -168,9 +169,9 @@
         <br>-->
         <div class="project-item">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Fitness app KOOOS</h3>
-          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/kooos-backend"
+          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/kooos-backend" class="link"
              target="_blank"> Backend repo</a>
-          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/makkussu/kooos-gamma"
+          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/makkussu/kooos-gamma" class="link"
              target="_blank">
           Frontend repo</a>
           <h4 style="padding-left: 1rem; font-weight: bold">Nov-2023 and ongoing</h4>
@@ -189,7 +190,7 @@
         <br>
         <div class="project-item">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Calorie tracking website</h3>
-          <a style="padding-left: 1rem; font-weight: bold;"
+          <a style="padding-left: 1rem; font-weight: bold;" class="link"
              href="https://mausma.pages.taltech.ee/iti0105-2022/public/pages/room-rent-webpage-main.html" target="_blank">
             Website address</a>
           <h4 style="padding-left: 1rem; font-weight: bold">Jan-2023 to Jan-2024</h4>
@@ -208,7 +209,7 @@
         <br>
         <div class="project-item">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Multiplayer shooting game</h3>
-          <a style="padding-left: 1rem; font-weight: bold;"
+          <a style="padding-left: 1rem; font-weight: bold;" class="link"
              href="https://www.youtube.com/watch?v=R_mRNq5_lO0&ab_channel=asd" target="_blank">
             Demo link (starts at 0:53)</a>
           <h4 style="padding-left: 1rem; font-weight: bold">Feb-2023 to Jun-2023</h4>
@@ -289,6 +290,9 @@ progress {
   grid-template-columns: 1fr 1fr;
   color: black;
   line-height: 2;
+}
+.link:hover{
+    color:cornflowerblue;
 }
 </style>
 <script setup>

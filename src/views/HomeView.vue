@@ -51,9 +51,14 @@
   padding-right: 15em;
 }
 .recommendation {
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 10%;
+  background-color: #badef3;
 }
+.education {
+  padding-bottom: 5%;
+}
+
 </style>
 <script setup>
 

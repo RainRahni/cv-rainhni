@@ -18,13 +18,12 @@
       </div>
       <div class="info-logo">
         <img class="logo" src="src/assets/location.png">
-        <a href="https://www.tallinn.ee/et" target="_blank"><h3 class="info">Tallinn,   Estonia</h3></a>
+        <a href="https://www.tallinn.ee/et" target="_blank"><h3 class="info">Tallinn, Estonia</h3></a>
       </div>
       <div class="links" style="padding-top: 4%">
         <a class="linkedIn" href="https://www.linkedin.com/in/rainrhni/" target="_blank">
-
+          <img class="logoTwo" src="src/assets/linkedin%20logo.png">
         </a>
-        <div></div><img class="logoTwo" src="src/assets/linkedin%20logo.png">
         <a class="github" href="https://github.com/RainRahni" target="_blank">
           <img class="logoTwo" src="src/assets/githlogo.png">
         </a>
@@ -45,6 +44,7 @@
 .info {
   margin-left: 1%;
   width: 100%;
+
 }
 .whole {
   display: grid;
@@ -70,6 +70,11 @@ h1 {
 }
 .logoTwo {
   width: 3%;
+
+}
+.logoTwo:hover {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(43%) saturate(4094%) hue-rotate(218deg) brightness(99%)
+  contrast(91%);
 }
 .box {
   background-color: cornflowerblue;
@@ -78,12 +83,18 @@ h1 {
   border-radius: 20px 20px 20px 0px;
 }
 
-h3:hover {
+.info:hover {
   color: cornflowerblue;
 }
 a {
   color:cornflowerblue;
 }
+.info-logo img:hover {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(43%) saturate(4094%) hue-rotate(218deg) brightness(99%)
+  contrast(91%);
+}
+
+
 
 
 </style>

@@ -30,17 +30,17 @@
     </div>
   </div>
   <footer>
-    <div class="container">
-      <div style="display:flex;justify-content: center; padding: 10%;">
+    <div class="containerC">
+      <div style="display: flex; align-items: center; justify-content: end; padding: 10%; width: 100%">
         <div class="contact-me">
-        <h2>Get in touch</h2>
-          <div class="info-logo">
-            <img class="logo" src="src/assets/mail.png">
-            <h3 class="info">rain.rahni@mail.ee</h3>
+          <h2>Get in touch</h2>
+            <div class="info-logo">
+            <img class="logo" src="src/assets/mail.png" style="margin-top: 1%;">
+            <a href="mailto:rain.rahni@mail.ee"><h3 class="info">rain.rahni@mail.ee</h3></a>
           </div>
           <div class="info-logo">
             <img class="logo" src="src/assets/phone.png">
-            <h3 class="info">+372 53065066</h3>
+            <a href="tel:+37253065066"><h3 class="info">+372 53065066</h3></a>
           </div>
         </div>
       </div>
@@ -56,13 +56,13 @@
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
   border-radius: 5%;
   align-items: center;
   justify-content: center;
   padding: 2%;
   margin: 0 10px;
   width: 20%;
+  transition: transform 0.3s ease-in-out;
 }
 .whole {
   display: flex;
@@ -70,14 +70,15 @@
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
+  padding-top: 5%;
 }
 .contact {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  padding: 40px 0px 60px;
+  padding: 40px 60px;
 }
-.container {
+.containerC {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: black;
@@ -92,5 +93,11 @@
   width: 3%;
   height: 1%;
   margin-top: 0.5%;
+}
+a:hover {
+  color: cornflowerblue;
+}
+.prof-item:hover {
+    transform: scale(1.05) translateY(-5px);
 }
 </style>
