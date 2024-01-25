@@ -35,9 +35,9 @@
         </a>
       </div>
     </div>
-    <div style="background-color: cornflowerblue; border-radius: 30%; width: 60%">
-      <img style="padding-top: 5%; border-radius: 50%; padding-left: 12%" src="~@/assets/Rain-stiparengu-2023.jpg">
-    </div>
+      <div style="background-color: cornflowerblue; border-radius: 30%; width: 60%; overflow: auto;">
+        <img style="padding-top: 5%; border-radius: 50%; padding-left: 12%; max-width: 100%; height: auto;" src="~@/assets/Rain-stiparengu-2023.jpg">
+      </div>
     </div>
 </template>
 <style>
