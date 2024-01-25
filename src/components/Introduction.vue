@@ -22,7 +22,7 @@
       </div>
       <div class="links" style="padding-top: 4%">
         <a class="linkedIn" href="https://www.linkedin.com/in/rainrhni/" target="_blank">
-          <img class="logoTwo" src="~@/assets/linkedin%20logo.png">
+          <img class="logoTwo" src="~@/assets/linkedin-logo.png">
         </a>
         <a class="github" href="https://github.com/RainRahni" target="_blank">
           <img class="logoTwo" src="~@/assets/githlogo.png">
