@@ -31,17 +31,15 @@
   </div>
   <footer>
     <div class="containerC">
-      <div style="display: flex; align-items: center; justify-content: end; padding: 10%; width: 100%">
         <div class="contact-me">
           <h2>Get in touch</h2>
             <div class="info-logo">
-            <img class="logo" src="src/assets/mail.png" style="margin-top: 1%;">
+            <img class="logo" src="src/assets/mail.png" style="margin-top: 0.5rem">
             <a href="mailto:rain.rahni@mail.ee"><h3 class="info">rain.rahni@mail.ee</h3></a>
           </div>
-          <div class="info-logo">
+          <div class="info-logo" style="float: right">
             <img class="logo" src="src/assets/phone.png">
             <a href="tel:+37253065066"><h3 class="info">+372 53065066</h3></a>
-          </div>
         </div>
       </div>
       <div class="credit">
@@ -83,9 +81,16 @@
   grid-template-columns: 1fr 1fr;
   color: black;
 }
+.contact-me {
+  align-items: center;
+  justify-content: center;
+  margin-left: 30%;
+  padding-left: 10%;
+}
+
 .credit {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   padding: 10%;
 }

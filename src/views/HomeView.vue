@@ -7,6 +7,7 @@
       </div>
     </section>
     <section class="about">
+      <div class="curve-top"></div>
       <div class="container">
         <About />
       </div>
@@ -22,9 +23,11 @@
     </div>
   </section>
   <section class="recommendation">
+    <div class="wave-top"></div>
     <div class="container">
       <Recommendation />
     </div>
+    <div class="curve"></div>
   </section>
   <section class="contact">
     <div class="container">
@@ -42,7 +45,10 @@
 .about {
   padding-top: 10%;
   padding-bottom: 10%;
-  background-color: #badef3;
+  background: linear-gradient(to top, #ffffff , #badef3 50%);
+  border-top-left-radius: 50% 120px;
+  border-top-right-radius: 50% 100px;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 120%);
 }
 .projects {
   padding-top: 10%;
@@ -51,12 +57,31 @@
   padding-right: 15em;
 }
 .recommendation {
-  padding-top: 5%;
   padding-bottom: 10%;
-  background-color: #badef3;
+  background: linear-gradient(to bottom, #ffffff , #badef3 50%);
+  border-bottom-left-radius: 50% 120px;
+  border-bottom-right-radius: 50% 100px;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 120%);
+
 }
 .education {
   padding-bottom: 5%;
+}
+.curve {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #ffffff 0%, #badef3 100%);
+  transform: skewY(-3deg);
+  border-bottom-left-radius: 50% 20px;
+  border-bottom-right-radius: 50% 20px;
+}
+.curve-top {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #ffffff 0%, #badef3 100%);
+  transform: skewY(-3deg);
+  border-bottom-left-radius: 50% 20px;
+  border-bottom-right-radius: 50% 20px;
 }
 
 </style>

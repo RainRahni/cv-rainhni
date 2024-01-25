@@ -44,7 +44,6 @@
 .info {
   margin-left: 1%;
   width: 100%;
-
 }
 .whole {
   display: grid;
