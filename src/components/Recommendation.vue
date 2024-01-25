@@ -8,7 +8,7 @@
       <h1 style="text-align: center; padding: 5%">Recommendations</h1>
       <div class="rec-item">
         <div class="profile">
-          <img src="src/assets/default-prof.png" style="width: 18%; padding: 4%">
+          <img src="~@/assets/default-prof.png" style="width: 18%; padding: 4%">
           <div class="profile-info">
             <h2>Annemari Riisimäe</h2>
             <h3>Assistant Lecturer</h3>

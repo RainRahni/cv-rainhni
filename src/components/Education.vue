@@ -9,7 +9,7 @@
       <br>
       <div class="ed-item">
         <div class="ed-info-group">
-          <img style="width: 9em; height: 10em; padding-left: 2%;" src="src/assets/taltech-logo.jpg">
+          <img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">
           <div class="ed-info" style="padding-left: 2%">
             <h3>Bachelor of Technology</h3>
             <h2>Informatics/Computer Science</h2>
@@ -28,7 +28,7 @@
       <br>
       <div class="ed-item" style="padding: 3% 5% 3% 5%;">
         <div class="ed-info-group">
-          <img style="width: 15%; padding: 3%" src="src/assets/cambridge-logo.png">
+          <img style="width: 15%; padding: 3%" src="~@/assets/cambridge-logo.png">
           <div class="ed-info" style="margin-right: 10%">
             <h4>Credential ID B4398702</h4>
             <h2>C1 Advanced - Score 189</h2>

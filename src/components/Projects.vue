@@ -5,7 +5,7 @@
       <div class="tech-list">
         <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Backend Development</h3>
         <div class="tech-item">
-          <img style="width: 12%;" src="src/assets/java.png">
+          <img style="width: 12%;" src="~@/assets/java.png">
           <div class="tech-info">
             <div>
               <h5>Java</h5>
@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="tech-item">
-          <img style="width: 12%;" src="src/assets/spring-logo.png">
+          <img style="width: 12%;" src="~@/assets/spring-logo.png">
           <div class="tech-info" >
             <div>
               <h5>Spring Boot</h5>
@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="tech-item">
-          <img style="width: 12%;" src="src/assets/python-logo.png">
+          <img style="width: 12%;" src="~@/assets/python-logo.png">
           <div class="tech-info" >
             <div>
               <h5>Python</h5>
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="tech-item">
-          <img style="width: 12%;" src="src/assets/sql-logo.png">
+          <img style="width: 12%;" src="~@/assets/sql-logo.png">
           <div class="tech-info" >
             <div>
               <h5>SQL</h5>
@@ -53,7 +53,7 @@
       <div class="tech-list">
         <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Web Development</h3>
         <div class="tech-item">
-          <img style="width: 12%;" src="src/assets/js-logo.png">
+          <img style="width: 12%;" src="~@/assets/js-logo.png">
           <div class="tech-info" >
             <div>
               <h5>Javascript</h5>
@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="tech-item">
-          <img style="width: 12%;" src="src/assets/html-logo.png">
+          <img style="width: 12%;" src="~@/assets/html-logo.png">
           <div class="tech-info" >
             <div>
               <h5>HTML</h5>
@@ -75,7 +75,7 @@
           </div>
         </div>
         <div class="tech-item">
-          <img style="width: 12%;" src="src/assets/vue-logo.png">
+          <img style="width: 12%;" src="~@/assets/vue-logo.png">
           <div class="tech-info" >
             <div>
               <h5>Vue.js</h5>
@@ -86,7 +86,7 @@
           </div>
         </div>
         <div class="tech-item">
-          <img style="width: 12%;" src="src/assets/css-logo.png">
+          <img style="width: 12%;" src="~@/assets/css-logo.png">
           <div class="tech-info" >
             <div>
               <h5>CSS</h5>
@@ -101,7 +101,7 @@
       <div class="tech-list">
         <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Other skills</h3>
           <div class="tech-item">
-            <img style="width: 12%;" src="src/assets/git-logo.png">
+            <img style="width: 12%;" src="~@/assets/git-logo.png">
             <div class="tech-info" >
               <div>
                 <h5>Git</h5>
@@ -112,7 +112,7 @@
             </div>
           </div>
           <div class="tech-item">
-            <img style="width: 12%;" src="src/assets/dsa-logo.png">
+            <img style="width: 12%;" src="~@/assets/dsa-logo.png">
             <div class="tech-info" >
               <div>
                 <h5>Data structures & algorithms</h5>

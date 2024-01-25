@@ -7,21 +7,21 @@
     <h1 style="text-align: center;">Profile links</h1>
     <div class="contact">
       <div class="prof-item">
-        <img style="width: 50%;" src="src/assets/linkedin-col-logo.png">
+        <img style="width: 50%;" src="~@/assets/linkedin-col-logo.png">
         <br>
         <h3><a href="https://www.linkedin.com/in/rainrhni/" target="_blank">
           @rainrhni</a>
         </h3>
       </div>
       <div class="prof-item">
-        <img style="width: 50%" src="src/assets/githlogo.png">
+        <img style="width: 50%" src="~@/assets/githlogo.png">
         <br>
         <h3><a href="https://github.com/RainRahni" target="_blank">
           @RainRahni</a>
         </h3>
       </div>
       <div class="prof-item">
-        <img style="width: 50%" src="src/assets/leetcode-logo.png">
+        <img style="width: 50%" src="~@/assets/leetcode-logo.png">
         <br>
         <h3><a href="https://leetcode.com/RainRahni/" target="_blank">
           @RainRahni</a>
@@ -34,11 +34,11 @@
         <div class="contact-me">
           <h2>Get in touch</h2>
             <div class="info-logo">
-            <img class="logo" src="src/assets/mail.png" style="margin-top: 0.5rem">
+            <img class="logo" src="~@/assets/mail.png" style="margin-top: 0.5rem">
             <a href="mailto:rain.rahni@mail.ee"><h3 class="info">rain.rahni@mail.ee</h3></a>
           </div>
           <div class="info-logo" style="float: right">
-            <img class="logo" src="src/assets/phone.png">
+            <img class="logo" src="~@/assets/phone.png">
             <a href="tel:+37253065066"><h3 class="info">+372 53065066</h3></a>
         </div>
       </div>

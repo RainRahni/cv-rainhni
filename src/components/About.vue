@@ -1,7 +1,7 @@
 <template>
     <div class="whole">
     <div>
-      <img style="width:45%; float: right; margin: 15%  " src="../assets/rainCoder.png">
+      <img style="width:45%; float: right; margin: 15%  " src="~@/assets/rainCoder.png">
     </div>
     <div class="about-text">
       <h1 style="text-align: center; font-weight: bold">About me</h1>
@@ -17,7 +17,7 @@
         that helps people's lives. Beyond my technical skills, I bring communication to my work. I'm also an active
         football player and enjoy spending time with friends.
       </p>
-      <a class="resume-button clickable" href="src/assets/Rain%20Rähni%20CVeng.pdf"
+      <a class="resume-button clickable" href="~@/assets/Rain%20Rähni%20CVeng.pdf"
          target="_blank"  >View
         Resume</a>
     </div>
