@@ -174,6 +174,9 @@
           <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/makkussu/kooos-gamma" class="link"
              target="_blank">
           Frontend repo</a>
+          <a style="padding-left: 1rem; font-weight: bold;"
+             href="https://www.youtube.com/watch?v=pVF0vaa5hF0&ab_channel=asd" class="link" target="_blank">
+            Demo video</a>
           <h4 style="padding-left: 1rem; font-weight: bold">Nov-2023 and ongoing</h4>
           <ul>
             <li>
