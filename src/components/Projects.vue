@@ -57,9 +57,9 @@
           <div class="tech-info" >
             <div>
               <h5>Javascript</h5>
-              <span>50%</span>
+              <span>40%</span>
             </div>
-            <progress max="100" value="50">
+            <progress max="100" value="40">
             </progress>
           </div>
         </div>
