@@ -18,10 +18,10 @@
         </div>
         <ul class="times" style="padding-right: 2%">
           <li>
-            <div class="time" style="width: 100%;">Sep&nbsp;-&nbsp;2022</div>
+            <div class="time">Sep&nbsp;-&nbsp;2022</div>
           </li>
           <li>
-            <div class="time" style="width: 100%;">Jun - 2025</div>
+            <div class="time">Jun - 2025</div>
           </li>
         </ul>
       </div>
@@ -37,7 +37,7 @@
         </div>
         <div class="ed-timeline" style="padding-right: 2%">
           <li>
-            <div class="time" style="width: 100%;">May&nbsp;-&nbsp;2021</div>
+            <div class="time">May&nbsp;-&nbsp;2021</div>
           </li>
         </div>
       </div>

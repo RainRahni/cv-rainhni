@@ -8,23 +8,31 @@
       <h1 style="text-align: center; padding: 5%">Recommendations</h1>
       <div class="rec-item">
         <div class="profile">
-          <img src="~@/assets/default-prof.png" style="width: 18%; padding: 4%">
+          <img src="~@/assets/ago-circ.png" style="width: 100%; max-width: 20%; padding: 4%;">
           <div class="profile-info">
-            <!--<h2>Annemari Riisimäe</h2>-->
-            <h2>Coming soon</h2>
-            <h3>Assistant Lecturer</h3>
-            <h4>Tallinn University of Technology, Tallinn</h4>
+            <div style="display: flex">
+              <a href="https://www.linkedin.com/in/ago-luberg/" target="_blank">
+                <h2>Ago Luberg, Ph.D</h2>
+              </a>
+            </div>
+            <h3>Program Manager, Senior lecturer</h3>
+            <h4>TalTech – Tallinn University of Technology</h4>
           </div>
         </div>
         <p style="padding-left: 4%;padding-right: 4%; text-align: justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            ojdasi9j0asfas90jjfas0jf0asjf0asjfas´fko0ifhasojfasjfaso
+          With his academic achievements, Rain ranks among the dean's list, which includes approximately the top 5% of
+          the best students. Rain has contributed to promoting the field by participating in the creation of an
+          introductory video clip for the information technology curriculum and assisting in organizing the INIT event,
+          aimed at introducing TalTech's information technology program to around 50 high school graduates. Rain is
+          exemplary and responsible in his studies, always giving his best. His goal is to acquire new knowledge to
+          improve people's lives by enhancing existing services and creating new possibilities. In the fall semester,
+          Rain serves as a teaching assistant for the introductory programming course, which has over 450 students.
+          He helps new students get acquainted with programming, assists in creating and organizing course materials,
+          and provides feedback on students' written code. The experience gained not only enhances his communication
+          skills but also strengthens his knowledge of programming, which is highly valued in the job market.
           </p>
           <div class="footer" style="margin-right: 3em; padding-bottom: 20px; display: flex; flex-direction: row-reverse;">
-              - January 26, 2024
+              - October 22, 2023
           </div>
       </div>
     </div>
@@ -52,5 +60,7 @@
   padding-left: 20%;
   padding-right: 20%;
 }
-
+a:hover {
+  color: cornflowerblue;
+}
 </style>
