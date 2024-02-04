@@ -30,6 +30,8 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+      - name: List dist contents
+        run: ls dist
 
       - name: Set Environment Variables
         run: echo "ACCESS_TOKEN=${{ secrets.SECRET_GITHUB }}" >> $GITHUB_ENV
