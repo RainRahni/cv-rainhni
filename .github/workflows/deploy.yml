@@ -33,6 +33,7 @@ jobs:
       - name: List dist contents
         run: |
           ls dist
+          npm audit
         
 
       - name: Set Environment Variables
