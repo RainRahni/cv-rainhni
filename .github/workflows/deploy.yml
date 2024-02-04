@@ -32,8 +32,7 @@ jobs:
           folder: dist
       - name: List dist contents
         run: |
-          cd assets
-          ls assets
+          ls dist
         
 
       - name: Set Environment Variables
