@@ -20,9 +20,9 @@
           <div class="tech-info" >
             <div>
               <h5>Spring Boot</h5>
-              <span>40%</span>
+              <span>50%</span>
             </div>
-            <progress max="100" value="40">
+            <progress max="100" value="50">
             </progress>
           </div>
         </div>
