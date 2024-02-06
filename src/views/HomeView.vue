@@ -70,6 +70,9 @@
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 120%);
 
 }
+.work {
+  padding-bottom: 5%;
+}
 .education {
   padding-bottom: 5%;
 }
