@@ -35,13 +35,13 @@
         </a>
       </div>
     </div>
-      <img style="padding-top: 5%; border-radius: 45%; padding-left: 12%; max-width: 100%; height: auto;"
+      <img style="padding-top: 5%; border-radius: 100%; padding-left: 12%; max-width: 100%; height: auto;"
            src="~@/assets/Rain-stiparengu-2023.jpg">
     </div>
 </template>
 <style>
 .info {
-  margin-left: 1%;
+  margin-left: 4%;
   width: 100%;
 }
 .whole {
@@ -80,7 +80,9 @@ h1 {
   text-align: center;
   border-radius: 20px 20px 20px 0px;
 }
-
+img {
+  vertical-align: bottom;
+}
 .info:hover {
   color: cornflowerblue;
 }
