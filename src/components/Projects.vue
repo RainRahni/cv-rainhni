@@ -170,13 +170,13 @@
         <div class="project-item">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Fitness app KOOOS</h3>
           <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/kooos-backend" class="link"
-             target="_blank"> Backend repo</a>
+             target="_blank">Backend repo</a>
           <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/makkussu/kooos-gamma" class="link"
              target="_blank">
           Frontend repo</a>
           <a style="padding-left: 1rem; font-weight: bold;"
              href="https://www.youtube.com/watch?v=pVF0vaa5hF0&ab_channel=asd" class="link" target="_blank">
-            Demo video</a>
+            Video</a>
           <h4 style="padding-left: 1rem; font-weight: bold">Nov-2023 and ongoing</h4>
           <ul>
             <li>
@@ -213,7 +213,7 @@
         <div class="project-item">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Multiplayer shooting game</h3>
           <a style="padding-left: 1rem; font-weight: bold;" class="link"
-             href="https://www.youtube.com/watch?v=R_mRNq5_lO0&ab_channel=asd" target="_blank">
+             href="https://youtu.be/R_mRNq5_lO0?feature=shared&t=53s" target="_blank">
             Demo link (starts at 0:53)</a>
           <h4 style="padding-left: 1rem; font-weight: bold">Feb-2023 to Jun-2023</h4>
           <ul>
@@ -268,7 +268,7 @@ h1 {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 100%;
-  border-radius: 5%;
+  border-radius: 12px;
   padding: 3%;
 }
 .tech-item {
@@ -283,6 +283,7 @@ div {
 .stack-img {
   width: 100%;
   max-width: 12%;
+  vertical-align: bottom;
 }
 
 .tech-info {
