@@ -18,7 +18,7 @@
         football player and enjoy spending time with friends.
       </p>
       <a class="resume-button clickable" href="../assets/cvEng.pdf"
-         target="_blank"  >View
+         target="_blank">View
         Resume</a>
     </div>
     </div>
