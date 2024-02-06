@@ -17,6 +17,11 @@
         <Projects />
       </div>
   </section>
+  <section class="work">
+    <div class="container">
+      <Work />
+    </div>
+  </section>
   <section class="education">
     <div class="container">
       <Education />
@@ -94,5 +99,6 @@ import Projects from "@/components/Projects.vue";
 import Education from "@/components/Education.vue";
 import Recommendation from "@/components/Recommendation.vue";
 import Contact from "@/components/Contact.vue";
+import Work from "@/components/Work.vue";
 
 </script>
