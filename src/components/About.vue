@@ -17,8 +17,9 @@
         that helps people's lives. Beyond my technical skills, I bring communication to my work. I'm also an active
         football player and enjoy spending time with friends.
       </p>
-      <a class="resume-button clickable" href="../assets/cvEng.pdf">View
-        Resume</a>
+      <a class="resume-button clickable"
+         href="https://drive.google.com/file/d/1ahZFxVTBA--rvbXrwNDKe-snA9ApAyPB/view?usp=sharing"
+       target="_blank">View Resume</a>
     </div>
     </div>
 </template>

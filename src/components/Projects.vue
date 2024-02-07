@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="tech-item">
-          <img class="stack-img" src="~@/assets/sql-logo.png">
+          <img class="stack-img " src="~@/assets/sql-logo.png" style="padding-left: 10px">
           <div class="tech-info" >
             <div>
               <h5>SQL</h5>
