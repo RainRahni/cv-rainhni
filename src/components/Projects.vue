@@ -303,6 +303,16 @@ progress {
 .link:hover{
     color:cornflowerblue;
 }
+@media(max-width: 1380px) {
+  .whole{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-item {
+    width: auto;
+  }
+}
 </style>
 <script setup>
 </script>

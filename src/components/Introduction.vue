@@ -1,42 +1,46 @@
 <template>
     <div class="whole">
-    <div>
-      <div class="box">
-        <h2 class="welcome" style="color: white;">Hello, I am</h2>
+      <div>
+        <div class="box">
+          <h2 class="welcome" style="color: white;">Hello, I am</h2>
+        </div>
+        <div>
+          <h1 class="name" style="color: black;font-weight: bold">Rain Rähni</h1>
+          <h2 class="occupation"
+              style="color: black;font-weight: bold">Bachelor`s computer science student</h2>
+        </div>
+        <br>
+        <div class="info-logo">
+          <img class="logo" src="~@/assets/mail.png" style="margin-top: 1%;">
+          <a href="mailto:rain.rahni@mail.ee"><h3 class="info">rain.rahni@mail.ee</h3></a>
+        </div>
+        <div class="info-logo">
+          <img class="logo" src="~@/assets/phone.png">
+          <a href="tel:+37253065066"><h3 class="info">+372 53065066</h3></a>
+        </div>
+        <div class="info-logo">
+          <img class="logo" src="~@/assets/location.png">
+          <a href="https://www.tallinn.ee/et" target="_blank"><h3 class="info">Tallinn, Estonia</h3></a>
+        </div>
+        <div class="links" style="padding-top: 4%">
+          <a class="linkedIn" href="https://www.linkedin.com/in/rainrhni/" target="_blank">
+            <img class="logoTwo" src="~@/assets/linkedin-logo.png">
+          </a>
+          <a class="github" href="https://github.com/RainRahni" target="_blank">
+            <img class="logoTwo" src="~@/assets/githlogo.png">
+          </a>
+          <a class="facebook" href="https://www.facebook.com/rain.rahni/" target="_blank">
+            <img class="logoTwo" src="~@/assets/facebooklogo.png">
+          </a>
+          <a class="instagram" href="https://www.instagram.com/rainrahni/" target="_blank">
+            <img class="logoTwo" src="~@/assets/insta-logo.png">
+          </a>
+        </div>
       </div>
-      <h1 class="name" style="color: black;font-weight: bold">Rain Rähni</h1>
-      <h2 class="occupation"
-          style="color: black;font-weight: bold">Bachelor`s computer science student</h2>
-      <br>
-      <div class="info-logo">
-        <img class="logo" src="~@/assets/mail.png" style="margin-top: 1%;">
-        <a href="mailto:rain.rahni@mail.ee"><h3 class="info">rain.rahni@mail.ee</h3></a>
+      <div>
+        <img style="padding-top: 5%; border-radius: 100%; padding-left: 12%; max-width: 100%; height: auto;"
+             src="~@/assets/Rain-stiparengu-2023.jpg">
       </div>
-      <div class="info-logo">
-        <img class="logo" src="~@/assets/phone.png">
-        <a href="tel:+37253065066"><h3 class="info">+372 53065066</h3></a>
-      </div>
-      <div class="info-logo">
-        <img class="logo" src="~@/assets/location.png">
-        <a href="https://www.tallinn.ee/et" target="_blank"><h3 class="info">Tallinn, Estonia</h3></a>
-      </div>
-      <div class="links" style="padding-top: 4%">
-        <a class="linkedIn" href="https://www.linkedin.com/in/rainrhni/" target="_blank">
-          <img class="logoTwo" src="~@/assets/linkedin-logo.png">
-        </a>
-        <a class="github" href="https://github.com/RainRahni" target="_blank">
-          <img class="logoTwo" src="~@/assets/githlogo.png">
-        </a>
-        <a class="facebook" href="https://www.facebook.com/rain.rahni/" target="_blank">
-          <img class="logoTwo" src="~@/assets/facebooklogo.png">
-        </a>
-        <a class="instagram" href="https://www.instagram.com/rainrahni/" target="_blank">
-          <img class="logoTwo" src="~@/assets/insta-logo.png">
-        </a>
-      </div>
-    </div>
-      <img style="padding-top: 5%; border-radius: 100%; padding-left: 12%; max-width: 100%; height: auto;"
-           src="~@/assets/Rain-stiparengu-2023.jpg">
     </div>
 </template>
 <style>
@@ -94,7 +98,13 @@ a {
   contrast(91%);
 }
 
-
+@media(max-width: 1380px) {
+  .whole{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 </style>
