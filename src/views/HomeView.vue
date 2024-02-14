@@ -92,7 +92,15 @@
   border-bottom-left-radius: 50% 20px;
   border-bottom-right-radius: 50% 20px;
 }
-
+@media(max-width: 1380px) {
+  .intro {
+    padding: 0;
+    padding-top: 10px;
+    width: auto;
+    margin: 0;
+    padding-bottom: 60px;
+  }
+}
 </style>
 <script setup>
 

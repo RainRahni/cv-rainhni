@@ -55,6 +55,7 @@
 }
 
 body {
+  min-width: 330px;
   min-height: 100vh;
   color: var(--color-text);
   background: #ffffff;

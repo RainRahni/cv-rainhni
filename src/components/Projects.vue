@@ -304,12 +304,15 @@ progress {
     color:cornflowerblue;
 }
 @media(max-width: 1380px) {
-  .whole{
+  .whole {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
   }
   .project-item {
+    width: auto;
+  }
+  .tech-item {
     width: auto;
   }
 }

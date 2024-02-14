@@ -1,6 +1,6 @@
 <template>
-    <div class="whole">
-      <div>
+    <div class="whole-intro ">
+      <div class="intro-text">
         <div class="box">
           <h2 class="welcome" style="color: white;">Hello, I am</h2>
         </div>
@@ -11,7 +11,7 @@
         </div>
         <br>
         <div class="info-logo">
-          <img class="logo" src="~@/assets/mail.png" style="margin-top: 1%;">
+          <img id="mais" class="logo"  src="~@/assets/mail.png" style="margin-top: 1%;">
           <a href="mailto:rain.rahni@mail.ee"><h3 class="info">rain.rahni@mail.ee</h3></a>
         </div>
         <div class="info-logo">
@@ -37,8 +37,8 @@
           </a>
         </div>
       </div>
-      <div>
-        <img style="padding-top: 5%; border-radius: 100%; padding-left: 12%; max-width: 100%; height: auto;"
+      <div class="profp">
+        <img style="border-radius: 100%;max-width: 100%; height: auto;"
              src="~@/assets/Rain-stiparengu-2023.jpg">
       </div>
     </div>
@@ -48,7 +48,7 @@
   margin-left: 4%;
   width: 100%;
 }
-.whole {
+.whole-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: black;
@@ -71,7 +71,7 @@ h1 {
   margin-top: 0.5%;
 }
 .logoTwo {
-  width: 3%;
+  width: 5%;
 
 }
 .logoTwo:hover {
@@ -80,7 +80,7 @@ h1 {
 }
 .box {
   background-color: cornflowerblue;
-  width: 20%;
+  width: 150px;
   text-align: center;
   border-radius: 20px 20px 20px 0px;
 }
@@ -99,10 +99,35 @@ a {
 }
 
 @media(max-width: 1380px) {
-  .whole{
+  .whole-intro{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .intro-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+  .profp {
+    padding-bottom: 10px;
+  }
+  .info-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .logo {
+    width: 20px;
+    height: 23px;
+    margin-top: 8px !important;
+  }
+  .links {
+    width: 130%;
+  }
+  .logoTwo {
+    width: 30px;
   }
 }
 
