@@ -60,7 +60,6 @@
   padding-top: 10%;
   padding-bottom: 10%;
   padding-left: 15em;
-  padding-right: 15em;
 }
 .recommendation {
   padding-bottom: 10%;
@@ -99,6 +98,9 @@
     width: auto;
     margin: 0;
     padding-bottom: 60px;
+  }
+  .projects {
+    padding-left: 6em;
   }
 }
 </style>

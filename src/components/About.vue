@@ -84,6 +84,12 @@
     margin-left: 140px;
     width: 40em;
   }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 </style>
 <script>
