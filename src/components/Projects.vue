@@ -310,7 +310,12 @@ progress {
   .project-item {
     width: 80%;
   }
-
+  .project-list {
+    padding-bottom: 10%;
+  }
+  .stack-img {
+    max-width: 20%;
+  }
 
 
 }

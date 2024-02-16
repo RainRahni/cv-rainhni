@@ -101,6 +101,7 @@
   }
   .projects {
     padding-left: 6em;
+
   }
 }
 </style>
