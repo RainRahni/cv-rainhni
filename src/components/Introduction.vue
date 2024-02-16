@@ -129,6 +129,9 @@ a {
   .logoTwo {
     width: 30px;
   }
+  .name {
+    width: 10em;
+  }
 }
 
 

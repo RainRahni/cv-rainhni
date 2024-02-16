@@ -4,7 +4,7 @@
       <img style="width:45%; float: right; margin: 15%" src="~@/assets/rainCoder.png">
     </div>
     <div class="about-text">
-      <h1 style="text-align: center; font-weight: bold">About me</h1>
+      <h1 class="aboutHead" style="text-align: center; font-weight: bold">About me</h1>
       <p style="text-align: justify">
         Hi, I'm Rain Rähni, a 2nd-year Bachelor's student in Informatics/Computer Science at Tallinn University of
         Technology. I've honed my skills in Backend Development using Java and Spring Boot through several school
@@ -34,8 +34,12 @@
   line-height: 2;
 }
 .about-text {
-  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
   width: 70%;
+}
+.aboutHead {
+  margin-left: 20%;
 }
 .resume-button {
   display: flex;
@@ -54,8 +58,8 @@
 .resume-button:hover {
   background-color: #00c5c5;
   animation-play-state: paused;
-
 }
+
 @keyframes heartbeat {
   0%, 100% {
     transform: scale(1);
@@ -84,12 +88,13 @@
     margin-left: 140px;
     width: 40em;
   }
-  .about-text {
+  .aboutHead {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    margin-left: 1%;
+    width: 100%;
   }
+
+
 }
 </style>
 <script>
