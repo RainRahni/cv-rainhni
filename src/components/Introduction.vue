@@ -97,7 +97,10 @@ a {
   filter: brightness(0) saturate(100%) invert(27%) sepia(43%) saturate(4094%) hue-rotate(218deg) brightness(99%)
   contrast(91%);
 }
-
+* {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 @media(max-width: 1380px) {
   .whole-intro{
     display: flex;

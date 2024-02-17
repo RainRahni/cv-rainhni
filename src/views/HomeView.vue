@@ -46,18 +46,18 @@
 .intro {
   margin-left: 15%;
   padding-top: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 10em;
 }
 .about {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5em;
+  padding-bottom: 5em;
   background: linear-gradient(to top, #ffffff , #badef3 50%);
   border-top-left-radius: 50% 120px;
   border-top-right-radius: 50% 100px;
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 120%);
 }
 .projects {
-  padding-top: 10%;
+  padding-top: 5em;
   padding-bottom: 10%;
   padding-left: 15em;
 }
@@ -100,9 +100,9 @@
     padding-bottom: 60px;
   }
   .projects {
-    padding-left: 6em;
-
+    padding-left: 3em;
   }
+
 }
 </style>
 <script setup>

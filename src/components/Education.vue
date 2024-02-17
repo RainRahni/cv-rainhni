@@ -16,14 +16,7 @@
             <h4>Tallinn University of Technology</h4>
           </div>
         </div>
-        <ul class="times" style="padding-right: 2%">
-          <li>
-            <div class="time">Sep&nbsp;-&nbsp;2022</div>
-          </li>
-          <li>
-            <div class="time">Jun - 2025</div>
-          </li>
-        </ul>
+
       </div>
       <br>
       <div class="ed-item" style="padding: 3% 5% 3% 5%;">

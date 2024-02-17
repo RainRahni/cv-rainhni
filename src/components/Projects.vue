@@ -250,8 +250,9 @@ h1 {
   margin-right: 20%;
 }
 .skill-header {
+  margin-left: 10%;
   text-align: center;
-  margin-top: -5%;
+  margin-top: 15px;
 }
 
 .project-item {
@@ -267,7 +268,7 @@ h1 {
   transition: 0.3s;
   width: 80%;
   border-radius: 12px;
-  padding: 3%;
+  padding: 20px;
 }
 .tech-item {
   display: inline-flex;
@@ -305,17 +306,26 @@ progress {
   .whole-tech {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
   }
   .project-item {
-    width: 80%;
+    width: 95%;
+    padding: 30px;
   }
   .project-list {
-    padding-bottom: 10%;
+    padding-bottom: 50px;
   }
   .stack-img {
-    max-width: 20%;
+    width: 300px;
+    padding: 2px;
+    min-width: 65px;
+    max-width: 65px;
   }
+  .tech-list {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
 
 
 }
