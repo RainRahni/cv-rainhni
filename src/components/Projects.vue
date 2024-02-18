@@ -308,7 +308,7 @@ progress {
     flex-direction: column-reverse;
   }
   .project-item {
-    width: 95%;
+    width: 90%;
     padding: 30px;
   }
   .project-list {

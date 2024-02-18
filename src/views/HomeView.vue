@@ -58,7 +58,7 @@
 }
 .projects {
   padding-top: 5em;
-  padding-bottom: 10%;
+  padding-bottom: 7em;
   padding-left: 15em;
 }
 .recommendation {
@@ -70,7 +70,7 @@
 
 }
 .work {
-  padding-bottom: 5%;
+  padding-bottom: 5em;
 }
 .education {
   padding-bottom: 5%;
@@ -101,6 +101,9 @@
   }
   .projects {
     padding-left: 3em;
+  }
+  .work {
+    padding-left: 1.5em;
   }
 
 }

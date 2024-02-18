@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="whole">
+  <div class="whole-work">
     <div class="work" style="padding-bottom: 5%;">
       <h1 style="text-align: center;">Work Experience</h1>
       <br>
@@ -108,7 +108,7 @@
   align-items: center;
   padding: 2% 5% 2% 5%;
 }
-.whole {
+.whole-work {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,6 +147,9 @@ li{
     top: -1px;
   }
 }
+.work {
+  color: black;
+}
 .time{
   color: black;
   font-family: sans-serif;
@@ -155,5 +158,22 @@ li{
 .w-item:hover {
   transform: scale3d(105%, 105%, 105%);
   background-color: #a9fdfd;
+}
+@media (max-width: 1380px) {
+  .whole-work {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+  }
+  .work h1 {
+      margin-left: 10%;
+      text-align: center;
+      margin-top: 15px;
+
+  }
+  .w-item {
+    width: 90%;
+  }
+
 }
 </style>
