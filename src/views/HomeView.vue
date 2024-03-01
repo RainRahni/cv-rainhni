@@ -45,7 +45,7 @@
 
 .intro {
   margin-left: 15%;
-  padding-top: 10%;
+  padding-top: 10em;
   padding-bottom: 10em;
 }
 .about {
@@ -58,11 +58,11 @@
 }
 .projects {
   padding-top: 5em;
-  padding-bottom: 7em;
-  padding-left: 15em;
+  padding-bottom: 60px;
+  padding-left: 7em;
 }
 .recommendation {
-  padding-bottom: 10%;
+  padding-bottom: 60px;
   background: linear-gradient(to bottom, #ffffff , #badef3 50%);
   border-bottom-left-radius: 50% 120px;
   border-bottom-right-radius: 50% 100px;
@@ -70,10 +70,10 @@
 
 }
 .work {
-  padding-bottom: 5em;
+  padding-bottom: 60px;
 }
 .education {
-  padding-bottom: 5%;
+  padding-bottom: 60px;
 }
 .curve {
   position: relative;
@@ -103,6 +103,9 @@
     padding-left: 3em;
   }
   .work {
+    padding-left: 1.5em;
+  }
+  .education {
     padding-left: 1.5em;
   }
 

@@ -5,7 +5,7 @@
 <template>
   <div class="whole-work">
     <div class="work" style="padding-bottom: 5%;">
-      <h1 style="text-align: center;">Work Experience</h1>
+      <h1 style="text-align: center;" class="workExp">Work Experience</h1>
       <br>
       <div class="w-item">
         <div class="w-info-group">
@@ -159,6 +159,9 @@ li{
   transform: scale3d(105%, 105%, 105%);
   background-color: #a9fdfd;
 }
+.workExp {
+  margin-left: 20%;
+}
 @media (max-width: 1380px) {
   .whole-work {
       display: flex;
@@ -166,13 +169,19 @@ li{
       padding: 0;
   }
   .work h1 {
-      margin-left: 10%;
-      text-align: center;
-      margin-top: 15px;
+    margin-left: 0;
+    width: 90%;
+    text-align: center;
+    margin-top: 15px;
 
+  }
+  .workExp {
+    margin-left: 0;
   }
   .w-item {
     width: 90%;
+    padding: 30px;
+
   }
 
 }

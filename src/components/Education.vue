@@ -3,27 +3,35 @@
 </script>
 
 <template>
-  <div class="whole">
-    <div class="education" style="padding-bottom: 5%;">
+  <div class="whole-ed">
+    <div class="education">
       <h1 style="text-align: center;">Education & Certificates</h1>
       <br>
-      <div class="ed-item">
+      <div class="ed-item taltech">
         <div class="ed-info-group">
-          <img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">
+          <img class="stack-img" src="~@/assets/taltech-logo.png">
           <div class="ed-info" style="padding-left: 2%">
             <h3>Bachelor of Technology</h3>
             <h2>Informatics/Computer Science</h2>
             <h4>Tallinn University of Technology</h4>
           </div>
         </div>
+        <ul class="times" style="padding-right: 2%">
+          <li>
+            <div class="time">Sep&nbsp;-&nbsp;2022</div>
+          </li>
+          <li>
+            <div class="time">Jul - 2025</div>
+          </li>
+        </ul>
 
       </div>
       <br>
-      <div class="ed-item" style="padding: 3% 5% 3% 5%;">
+      <div class="ed-item">
         <div class="ed-info-group">
-          <img style="width: 15%; padding: 3%" src="~@/assets/cambridge-logo.png">
-          <div class="ed-info" style="margin-right: 10%">
-            <h4>Credential ID B4398702</h4>
+          <img class="stack-img" src="~@/assets/cambridge-logo.png">
+          <div class="ed-info" style="padding-left: 2%">
+            <h2>Credential ID B4398702</h2>
             <h2>C1 Advanced - Score 189</h2>
             <h4>Cambridge University Press & Assessment English</h4>
           </div>
@@ -45,6 +53,9 @@
   align-items: center;
   width: 100%;
 }
+.education {
+  width: 100%;
+}
 .ed-item {
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -53,13 +64,14 @@
   align-items: center;
   padding: 2% 5% 2% 5%;
 }
-.whole {
+.whole-ed {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-left: 20%;
   padding-right: 20%;
+  color: black;
 }
 ul, li{
   list-style: none;
@@ -69,7 +81,7 @@ ul, li{
   border-radius: 12px;
   position: relative;
 }
-li{
+li {
   padding-bottom: 1.5rem;
   border-left: 1px solid cornflowerblue;
   position: relative;
@@ -99,5 +111,31 @@ li{
 }
 .ed-item:hover {
   transform: scale3d(105%, 105%, 105%);
+}
+.stack-img {
+  width: 100%;
+  max-width: 12%;
+  vertical-align: bottom;
+}
+
+@media (max-width: 1380px) {
+  .whole-ed {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .education h1 {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .ed-item {
+    width: 90%;
+    padding: 30px;
+  }
+;
 }
 </style>
