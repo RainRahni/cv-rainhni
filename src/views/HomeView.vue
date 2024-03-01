@@ -108,6 +108,9 @@
   .education {
     padding-left: 1.5em;
   }
+  .recommendation {
+    display: none;
+  }
 
 }
 </style>

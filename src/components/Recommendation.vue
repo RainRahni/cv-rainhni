@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div class="whole">
+  <div class="whole-rec">
     <div class="recommendation">
-      <h1 style="text-align: center; padding: 5%">Recommendations</h1>
+      <h1 style="text-align: center;">Recommendations</h1>
       <div class="rec-item">
         <div class="profile">
           <img src="~@/assets/ago-circ.png" style="width: 100%; max-width: 20%; padding: 4%;">
@@ -52,7 +52,8 @@
   border-radius: 5%;
   background-color: white;
 }
-.whole {
+.whole-rec {
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,5 +63,16 @@
 }
 a:hover {
   color: cornflowerblue;
+}
+@media(max-width: 1380px) {
+  .whole-rec {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .rec-item {
+    width: 90%;
+    padding: 30px;
+  }
 }
 </style>
