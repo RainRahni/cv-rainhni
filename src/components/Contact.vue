@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="whole">
-    <h1 style="text-align: center;">Profile links</h1>
+  <div class="whole-prof">
+    <h1 style="text-align: center; margin-left: 20%">Profile links</h1>
     <div class="contact">
       <div class="prof-item">
         <img style="width: 50%;" src="~@/assets/linkedin-col-logo.png">
@@ -62,13 +62,14 @@
   width: 20%;
   transition: transform 0.3s ease-in-out;
 }
-.whole {
+.whole-prof {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 5%;
+  color: black;
 }
 .contact {
   display: flex;
@@ -104,5 +105,27 @@ a:hover {
 }
 .prof-item:hover {
     transform: scale(1.05) translateY(-5px);
+}
+@media(max-width: 1380px) {
+  .whole-prof h1 {
+    margin-left: 20%;
+    font-size: 30px;
+  }
+  .prof-item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    margin: 0 10px;
+    width: 100em;
+  }
+  .contact {
+    width: 90%;
+  }
+
+
 }
 </style>
