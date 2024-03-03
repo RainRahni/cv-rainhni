@@ -1,5 +1,5 @@
 <template>
-  <div class="whole">
+  <div class="whole-tech">
     <div class="tech-stack">
       <h1 class="skill-header">Tech stack</h1>
       <div class="tech-list">
@@ -244,11 +244,15 @@ a:hover {
 }
 
 h1 {
+  display: flex;
+  flex-direction: column;
   font-size: 55px;
+  margin-right: 20%;
 }
 .skill-header {
+  margin-left: 10%;
   text-align: center;
-  margin-top: -5%;
+  margin-top: 15px;
 }
 
 .project-item {
@@ -259,17 +263,12 @@ h1 {
   padding: 3%;
 }
 
-.project-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .tech-list {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 100%;
+  width: 80%;
   border-radius: 12px;
-  padding: 3%;
+  padding: 20px;
 }
 .tech-item {
   display: inline-flex;
@@ -294,7 +293,7 @@ div {
 progress {
   width: 100%;
 }
-.whole {
+.whole-tech {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: black;
@@ -302,6 +301,33 @@ progress {
 }
 .link:hover{
     color:cornflowerblue;
+}
+@media(max-width: 1380px) {
+  .whole-tech {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .project-item {
+    width: 90%;
+    padding: 30px;
+  }
+  .project-list {
+    padding-bottom: 50px;
+  }
+  .stack-img {
+    width: 300px;
+    padding: 2px;
+    min-width: 65px;
+    max-width: 65px;
+  }
+  .tech-list {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+
+
 }
 </style>
 <script setup>

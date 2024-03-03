@@ -45,25 +45,24 @@
 
 .intro {
   margin-left: 15%;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
 .about {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5em;
+  padding-bottom: 5em;
   background: linear-gradient(to top, #ffffff , #badef3 50%);
   border-top-left-radius: 50% 120px;
   border-top-right-radius: 50% 100px;
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 120%);
 }
 .projects {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 15em;
-  padding-right: 15em;
+  padding-top: 5em;
+  padding-bottom: 60px;
+  padding-left: 7em;
 }
 .recommendation {
-  padding-bottom: 10%;
+  padding-bottom: 60px;
   background: linear-gradient(to bottom, #ffffff , #badef3 50%);
   border-bottom-left-radius: 50% 120px;
   border-bottom-right-radius: 50% 100px;
@@ -71,10 +70,10 @@
 
 }
 .work {
-  padding-bottom: 5%;
+  padding-bottom: 60px;
 }
 .education {
-  padding-bottom: 5%;
+  padding-bottom: 60px;
 }
 .curve {
   position: relative;
@@ -92,7 +91,28 @@
   border-bottom-left-radius: 50% 20px;
   border-bottom-right-radius: 50% 20px;
 }
+@media(max-width: 1380px) {
+  .intro {
+    padding: 0;
+    padding-top: 10px;
+    width: auto;
+    margin: 0;
+    padding-bottom: 60px;
+  }
+  .projects {
+    padding-left: 3em;
+  }
+  .work {
+    padding-left: 1.5em;
+  }
+  .education {
+    padding-left: 1.5em;
+  }
+  .recommendation {
+    display: none;
+  }
 
+}
 </style>
 <script setup>
 
