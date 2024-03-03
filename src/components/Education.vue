@@ -136,6 +136,12 @@ li {
     width: 90%;
     padding: 30px;
   }
-;
+}
+
+@media (max-width: 750px) {
+  .times,
+  .ed-timeline {
+    display: none;
+  }
 }
 </style>

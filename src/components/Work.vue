@@ -83,7 +83,7 @@
             </p>
           </div>
         </div>
-        <div class="w-timeline" style="padding-right: 2%">
+        <div class="w-timeline">
           <li>
             <div class="time">March&nbsp;-&nbsp;2023</div>
           </li>
@@ -162,7 +162,7 @@ li{
 .workExp {
   margin-left: 20%;
 }
-@media (max-width: 1380px) {
+@media screen and(max-width: 1380px) {
   .whole-work {
       display: flex;
       flex-direction: column;
@@ -181,8 +181,8 @@ li{
   .w-item {
     width: 90%;
     padding: 30px;
-
   }
-
 }
+
+
 </style>
