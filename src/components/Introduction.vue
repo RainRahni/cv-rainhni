@@ -112,6 +112,7 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 90%;
   }
   .profp {
     padding-bottom: 10px;
@@ -134,6 +135,9 @@ a {
   }
   .name {
     width: 10em;
+  }
+  .occupation {
+    font-size: 20px;
   }
 }
 

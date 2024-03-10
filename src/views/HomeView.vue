@@ -77,7 +77,6 @@
 }
 .curve {
   position: relative;
-  width: 100%;
   background: linear-gradient(to bottom, #ffffff 0%, #badef3 100%);
   transform: skewY(-3deg);
   border-bottom-left-radius: 50% 20px;
@@ -85,7 +84,6 @@
 }
 .curve-top {
   position: relative;
-  width: 100%;
   background: linear-gradient(to top, #ffffff 0%, #badef3 100%);
   transform: skewY(-3deg);
   border-bottom-left-radius: 50% 20px;
@@ -95,7 +93,6 @@
   .intro {
     padding: 0;
     padding-top: 10px;
-    width: auto;
     margin: 0;
     padding-bottom: 60px;
   }

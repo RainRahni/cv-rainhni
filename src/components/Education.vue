@@ -5,7 +5,7 @@
 <template>
   <div class="whole-ed">
     <div class="education">
-      <h1 style="text-align: center;">Education & Certificates</h1>
+      <h1 class="edh" style="text-align: center;">Education & Certificates</h1>
       <br>
       <div class="ed-item taltech">
         <div class="ed-info-group">
@@ -72,6 +72,7 @@
   padding-left: 20%;
   padding-right: 20%;
   color: black;
+  font-size: 12px;
 }
 ul, li{
   list-style: none;

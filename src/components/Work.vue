@@ -173,14 +173,13 @@ li{
     width: 90%;
     text-align: center;
     margin-top: 15px;
-
-  }
-  .workExp {
-    margin-left: 0;
   }
   .w-item {
     width: 90%;
     padding: 30px;
+  }
+  .workExp {
+    font-size: 1px;
   }
 }
 
