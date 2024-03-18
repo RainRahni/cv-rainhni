@@ -87,6 +87,7 @@
     flex-direction: row;
     margin-left: 140px;
     width: 40em;
+    //maybe problem here
   }
   .aboutHead {
     display: flex;

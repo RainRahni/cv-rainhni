@@ -20,19 +20,23 @@
           </div>
         </div>
         <p style="padding-left: 4%;padding-right: 4%; text-align: justify">
-          With his academic achievements, Rain ranks among the dean's list, which includes approximately the top 5% of
-          the best students. Rain has contributed to promoting the field by participating in the creation of an
-          introductory video clip for the information technology curriculum and assisting in organizing the INIT event,
-          aimed at introducing TalTech's information technology program to around 50 high school graduates. Rain is
-          exemplary and responsible in his studies, always giving his best. His goal is to acquire new knowledge to
-          improve people's lives by enhancing existing services and creating new possibilities. In the fall semester,
-          Rain serves as a teaching assistant for the introductory programming course, which has over 450 students.
-          He helps new students get acquainted with programming, assists in creating and organizing course materials,
-          and provides feedback on students' written code. The experience gained not only enhances his communication
-          skills but also strengthens his knowledge of programming, which is highly valued in the job market.
+          Rain Rähni began his studies in the TalTech Bachelor’s program in Informatics in the fall of 2022.
+          His academic achievements have earned his a place on the dean’s list since the fall semester of 2022,
+          which is an honor bestowed upon approximately the top 10% of students. Over the course of three semesters,
+          Rain has accumulated 113 ECTS credits with a weighted average grade of 4.7. Rain actively contributes to
+          promoting his field of study. She participated in creating an introductory video clip for the informatics
+          curriculum and helped organize the INIT event, where approximately 50 high school graduates were introduced
+          to the TalTech informatics program. Rain is an exemplary and responsible student, consistently giving
+          his best effort. His goal is to acquire new knowledge to enhance existing services and create new
+          opportunities, ultimately improving people’s lives. During the fall semester, Rain served as a teaching
+          assistant for the introductory programming course, which had over 450 students enrolled. She assists new
+          students in getting acquainted with programming. Additionally, in the spring semester, she is a teaching
+          assistant for the fundamental programming course and software development project. In this role, she helps
+          create and organize study materials and provides feedback to students on their code. His teaching experience
+          is highly valued in the job market
           </p>
           <div class="footer" style="margin-right: 3em; padding-bottom: 20px; display: flex; flex-direction: row-reverse;">
-              - October 22, 2023
+              - March 4, 2024
           </div>
       </div>
     </div>

@@ -48,6 +48,7 @@
   padding-top: 10em;
   padding-bottom: 10em;
 }
+
 .about {
   padding-top: 5em;
   padding-bottom: 5em;
