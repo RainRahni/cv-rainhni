@@ -193,9 +193,11 @@
         <br>
         <div class="project-item">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Calorie tracking website</h3>
-          <a style="padding-left: 1rem; font-weight: bold;" class="link"
-             href="https://mausma.pages.taltech.ee/iti0105-2022/public/pages/room-rent-webpage-main.html" target="_blank">
-            Website address</a>
+          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/barv-backend" class="link"
+             target="_blank">Backend repo</a>
+          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/barv-frontend" class="link"
+             target="_blank">
+            Frontend repo</a>
           <h4 style="padding-left: 1rem; font-weight: bold">Jan-2023 to Jan-2024</h4>
           <ul>
             <li>
