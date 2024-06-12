@@ -3,12 +3,23 @@
     <div class="tech-stack">
       <h1 class="skill-header">Tech stack</h1>
       <div class="tech-list">
-        <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Backend Development</h3>
+        <h3 class="tech-list-name">Backend Development</h3>
         <div class="tech-item">
           <img class="stack-img" src="~@/assets/java.png">
           <div class="tech-info">
             <div>
-              <h5>Java</h5>
+              <h5 class="tech-name">Java</h5>
+              <span>70%</span>
+            </div>
+            <progress max="100" value="70">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/cSharplogo.png">
+          <div class="tech-info">
+            <div>
+              <h5 class="tech-name">C#</h5>
               <span>60%</span>
             </div>
             <progress max="100" value="60">
@@ -19,10 +30,32 @@
           <img class="stack-img" src="~@/assets/spring-logo.png">
           <div class="tech-info" >
             <div>
-              <h5>Spring Boot</h5>
-              <span>50%</span>
+              <h5 class="tech-name">Spring Boot</h5>
+              <span>60%</span>
             </div>
-            <progress max="100" value="50">
+            <progress max="100" value="60">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/.netlogo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">.NET</h5>
+              <span>60%</span>
+            </div>
+            <progress max="100" value="60">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/efLogo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">Entity Framework</h5>
+              <span>60%</span>
+            </div>
+            <progress max="100" value="60">
             </progress>
           </div>
         </div>
@@ -30,7 +63,7 @@
           <img class="stack-img" src="~@/assets/python-logo.png">
           <div class="tech-info" >
             <div>
-              <h5>Python</h5>
+              <h5 class="tech-name">Python</h5>
               <span>40%</span>
             </div>
             <progress max="100" value="40">
@@ -38,10 +71,21 @@
           </div>
         </div>
         <div class="tech-item">
-          <img class="stack-img " src="~@/assets/sql-logo.png" style="padding-left: 10px">
+          <img class="stack-img " src="~@/assets/postgresqllogo.png" style="padding-left: 10px">
           <div class="tech-info" >
             <div>
-              <h5>SQL</h5>
+              <h5 class="tech-name">PostgreSQL</h5>
+              <span>50%</span>
+            </div>
+            <progress max="100" value="50">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img " src="~@/assets/mssqldbLogo.png" style="padding-left: 10px">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">MSSQL Express</h5>
               <span>30%</span>
             </div>
             <progress max="100" value="30">
@@ -51,15 +95,48 @@
       </div>
       <br>
       <div class="tech-list">
-        <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Web Development</h3>
+        <h3 class="tech-list-name">Web Development</h3>
         <div class="tech-item">
           <img class="stack-img" src="~@/assets/js-logo.png">
           <div class="tech-info" >
             <div>
-              <h5>Javascript</h5>
-              <span>40%</span>
+              <h5 class="tech-name">Javascript</h5>
+              <span>50%</span>
             </div>
-            <progress max="100" value="40">
+            <progress max="100" value="50">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/tslogo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">Typescript</h5>
+              <span>60%</span>
+            </div>
+            <progress max="100" value="60">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/angularlogo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">Angular</h5>
+              <span>50%</span>
+            </div>
+            <progress max="100" value="50">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/reactjslogo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">React</h5>
+              <span>50%</span>
+            </div>
+            <progress max="100" value="50">
             </progress>
           </div>
         </div>
@@ -67,10 +144,10 @@
           <img class="stack-img" src="~@/assets/html-logo.png">
           <div class="tech-info" >
             <div>
-              <h5>HTML</h5>
-              <span>40%</span>
+              <h5 class="tech-name">HTML</h5>
+              <span>50%</span>
             </div>
-            <progress max="100" value="40">
+            <progress max="100" value="50">
             </progress>
           </div>
         </div>
@@ -78,10 +155,10 @@
           <img class="stack-img" src="~@/assets/vue-logo.png">
           <div class="tech-info" >
             <div>
-              <h5>Vue.js</h5>
-              <span>30%</span>
+              <h5 class="tech-name">Vue.js</h5>
+              <span>50%</span>
             </div>
-            <progress max="100" value="30">
+            <progress max="100" value="50">
             </progress>
           </div>
         </div>
@@ -89,22 +166,22 @@
           <img class="stack-img" src="~@/assets/css-logo.png">
           <div class="tech-info" >
             <div>
-              <h5>CSS</h5>
-              <span>20%</span>
+              <h5 class="tech-name">CSS/SCSS</h5>
+              <span>40%</span>
             </div>
-            <progress max="100" value="20">
+            <progress max="100" value="40">
             </progress>
           </div>
         </div>
       </div>
       <br>
       <div class="tech-list">
-        <h3 style="padding-left: 1rem; font-weight: bold" class="tech-name">Other skills</h3>
+        <h3 class="tech-list-name">Other skills</h3>
           <div class="tech-item">
             <img class="stack-img" src="~@/assets/git-logo.png">
             <div class="tech-info" >
               <div>
-                <h5>Git</h5>
+                <h5 class="tech-name">Git</h5>
                 <span>40%</span>
               </div>
               <progress max="100" value="40">
@@ -115,7 +192,7 @@
             <img class="stack-img" src="~@/assets/dsa-logo.png">
             <div class="tech-info" >
               <div>
-                <h5>Data structures & algorithms</h5>
+                <h5 class="tech-name">Data structures & algorithms</h5>
                 <span>40%</span>
               </div>
               <progress max="100" value="40">
@@ -147,26 +224,6 @@
           </ul>
         </div>
         <br>
-        <!--
-        <div class="project-item">
-          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Sudoku Idris</h3>
-          <a style="padding-left: 1rem; font-weight: bold;"
-             href="https://mausma.pages.taltech.ee/iti0105-2022/public/pages/room-rent-webpage-main.html" target="_blank">
-            Website address</a>
-          <h4 style="padding-left: 1rem; font-weight: bold">Sep-2022 to Dec-2022</h4>
-          <ul>
-            <li>
-              Developed a website with two teammates as part of a course project. The goal of the website was
-              to make renting rooms in TalTech University more comfortable for
-              both teachers and students.</li>
-            <li>
-              Used HTML, CSS, JavaScript and the
-              Bootstrap 5 framework to achieve functionality.
-              The project was managed using GitLab.
-            </li>
-          </ul>
-        </div>
-        <br>-->
         <div class="project-item">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Post-office website</h3>
           <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/post-office-back" class="link"
@@ -278,13 +335,17 @@ div {
   display: flex;
   justify-content: space-between;
 }
-
+.tech-list-name {
+  font-weight: bold;
+}
 .stack-img {
   width: 100%;
   max-width: 12%;
   vertical-align: bottom;
 }
-
+.tech-name {
+  font-weight: bold;
+}
 .tech-info {
   padding-left: 20px;
   width: 100%;
