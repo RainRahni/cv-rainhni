@@ -168,24 +168,22 @@
         </div>
         <br>-->
         <div class="project-item">
-          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Fitness app KOOOS</h3>
-          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/kooos-backend" class="link"
+          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Post-office website</h3>
+          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/post-office-back" class="link"
              target="_blank">Backend repo</a>
-          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/makkussu/kooos-gamma" class="link"
+          <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/post-office-front" class="link"
              target="_blank">
           Frontend repo</a>
-          <a style="padding-left: 1rem; font-weight: bold;"
-             href="https://www.youtube.com/watch?v=pVF0vaa5hF0&ab_channel=asd" class="link" target="_blank">
-            Video</a>
-          <h4 style="padding-left: 1rem; font-weight: bold">Nov-2023 and ongoing</h4>
+          <h4 style="padding-left: 1rem; font-weight: bold">May-2024 to Jun-2024</h4>
           <ul>
             <li>
-              Developing an app with a friend that enables users to track their exercise and
-              meal plans. App features AI chatbot that generates both plans making it easy
-              for users to reach their fitness goals without a personal coach.</li>
+              Developed an interactive web platform that provides a comprehensive solution for managing shipments
+              and bags. This platform is designed with a user-friendly interface that allows users to view all their
+              created shipments and bags. In addition to viewing, the platform also empowers
+              users to add new shipments, bags, parcels, and letters themselves. </li>
             <li>
-              Used Java, PostrgreSQL and Spring Boot
-              framework to achieve functionality.
+              Used .NET, Entity Framework and MSSQL Database
+              to achieve functionality.
               The project was managed using Github.
             </li>
           </ul>
