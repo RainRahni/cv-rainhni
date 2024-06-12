@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="tech-item">
-          <img class="stack-img" src="~@/assets/.netlogo.png">
+          <img class="stack-img" src="../assets/netlogo.png">
           <div class="tech-info" >
             <div>
               <h5 class="tech-name">.NET</h5>
