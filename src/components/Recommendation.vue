@@ -24,14 +24,14 @@
           His academic achievements have earned his a place on the dean’s list since the fall semester of 2022,
           which is an honor bestowed upon approximately the top 10% of students. Over the course of three semesters,
           Rain has accumulated 113 ECTS credits with a weighted average grade of 4.7. Rain actively contributes to
-          promoting his field of study. She participated in creating an introductory video clip for the informatics
+          promoting his field of study. He participated in creating an introductory video clip for the informatics
           curriculum and helped organize the INIT event, where approximately 50 high school graduates were introduced
           to the TalTech informatics program. Rain is an exemplary and responsible student, consistently giving
           his best effort. His goal is to acquire new knowledge to enhance existing services and create new
           opportunities, ultimately improving people’s lives. During the fall semester, Rain served as a teaching
-          assistant for the introductory programming course, which had over 450 students enrolled. She assists new
-          students in getting acquainted with programming. Additionally, in the spring semester, she is a teaching
-          assistant for the fundamental programming course and software development project. In this role, she helps
+          assistant for the introductory programming course, which had over 450 students enrolled. He assists new
+          students in getting acquainted with programming. Additionally, in the spring semester, he is a teaching
+          assistant for the fundamental programming course and software development project. In this role, he helps
           create and organize study materials and provides feedback to students on their code. His teaching experience
           is highly valued in the job market
           </p>
