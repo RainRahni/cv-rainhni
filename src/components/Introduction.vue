@@ -1,48 +1,53 @@
 <template>
-    <div class="whole-intro ">
-      <div class="intro-text">
-        <div class="box">
-          <h2 class="welcome" style="color: white;">Hello, I am</h2>
-        </div>
-        <div>
-          <h1 class="name" style="color: black;font-weight: bold">Rain Rähni</h1>
-          <h2 class="occupation"
-              style="color: black;font-weight: bold">Junior Software Engineer</h2>
-        </div>
-        <br>
-        <div class="info-logo">
-          <img id="mais" class="logo"  src="~@/assets/mail.png" style="margin-top: 1%;">
-          <a href="mailto:rain.rahni@mail.ee"><h3 class="info">rain.rahni@mail.ee</h3></a>
-        </div>
-        <div class="info-logo">
-          <img class="logo" src="~@/assets/phone.png">
-          <a href="tel:+37253065066"><h3 class="info">+372 53065066</h3></a>
-        </div>
-        <div class="info-logo">
-          <img class="logo" src="~@/assets/location.png">
-          <a href="https://www.tallinn.ee/et" target="_blank"><h3 class="info">Tallinn, Estonia</h3></a>
-        </div>
-        <div class="links" style="padding-top: 4%">
-          <a class="linkedIn" href="https://www.linkedin.com/in/rainrhni/" target="_blank">
-            <img class="logoTwo" src="~@/assets/linkedin-logo.png">
-          </a>
-          <a class="github" href="https://github.com/RainRahni" target="_blank">
-            <img class="logoTwo" src="~@/assets/githlogo.png">
-          </a>
-          <a class="facebook" href="https://www.facebook.com/rain.rahni/" target="_blank">
-            <img class="logoTwo" src="~@/assets/facebooklogo.png">
-          </a>
-          <a class="instagram" href="https://www.instagram.com/rainrahni/" target="_blank">
-            <img class="logoTwo" src="~@/assets/insta-logo.png">
-          </a>
-        </div>
+  <div class="whole-intro ">
+    <div class="intro-text">
+      <div class="box">
+        <h2 class="welcome" style="color: white;">Hello, I am</h2>
       </div>
-      <div class="profp">
-        <img style="border-radius: 100%;max-width: 100%; height: auto;"
-             src="~@/assets/Rain-stiparengu-2023.jpg">
+      <div>
+        <h1 class="name" style="color: black;font-weight: bold">Rain Rähni</h1>
+        <h2 class="occupation"
+            style="color: black;font-weight: bold">Software Engineer</h2>
+      </div>
+      <br>
+      <div class="info-logo">
+        <img id="mais" class="logo"  src="~@/assets/mail.png" style="margin-top: 1%;">
+        <a href="mailto:rain.rahni@mail.ee"><h3 class="info">rain.rahni@mail.ee</h3></a>
+      </div>
+      <div class="info-logo">
+        <img class="logo" src="~@/assets/phone.png">
+        <a href="tel:+37253065066"><h3 class="info">+372 53065066</h3></a>
+      </div>
+      <div class="info-logo">
+        <img class="logo" src="~@/assets/location.png">
+        <a href="https://www.tallinn.ee/et" target="_blank"><h3 class="info">Tallinn, Estonia</h3></a>
+      </div>
+      <div class="links" style="padding-top: 4%">
+        <a class="linkedIn" href="https://www.linkedin.com/in/rainrhni/" target="_blank">
+          <img class="logoTwo" src="~@/assets/linkedin-logo.png">
+        </a>
+        <a class="github" href="https://github.com/RainRahni" target="_blank">
+          <img class="logoTwo" src="~@/assets/githlogo.png">
+        </a>
+        <a class="facebook" href="https://www.facebook.com/rain.rahni/" target="_blank">
+          <img class="logoTwo" src="~@/assets/facebooklogo.png">
+        </a>
+        <a class="instagram" href="https://www.instagram.com/rainrahni/" target="_blank">
+          <img class="logoTwo" src="~@/assets/insta-logo.png">
+        </a>
       </div>
     </div>
+    <div class="profp">
+      <div class="profile-container">
+        <div class="profile-wrapper">
+          <img class="profile-img"
+               src="~@/assets/Rain-stiparengu-2023.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+
 <style>
 .info {
   margin-left: 4%;
@@ -101,6 +106,76 @@ a {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+.profp {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.profile-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  right: -18px;
+  bottom: -18px;
+  border: 18px solid #6495ed;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: borderAppear 2s ease-out;
+}
+
+.profile-wrapper::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  border: 32px solid #87ceeb;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: borderAppear 2s ease-out 0.5s both;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes borderAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
 @media(max-width: 1380px) {
   .whole-intro{
     display: flex;
@@ -139,9 +214,18 @@ a {
   .occupation {
     font-size: 20px;
   }
+  .border-outer {
+    width: 280px;
+    height: 280px;
+  }
+  .border-inner {
+    width: 240px;
+    height: 240px;
+  }
+  .profile-container {
+    width: 250px;
+    height: 250px;
+  }
 }
 
-
 </style>
-<script setup>
-</script>

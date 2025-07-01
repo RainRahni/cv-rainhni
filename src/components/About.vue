@@ -6,7 +6,7 @@
     <div class="about-text">
       <h1 class="aboutHead" style="text-align: center; font-weight: bold">About me</h1>
       <p style="text-align: justify">
-        Hi, I'm Rain Rähni — a Junior Full-Stack Developer with a strong focus on building accessible, user-centered web applications.
+        Hi, I'm Rain Rähni — a Full-Stack Developer with a strong focus on building accessible, user-centered web applications.
         I have hands-on experience with backend technologies like Java, Spring Boot, .NET, and Python, and I work fluently with frontend
         frameworks including React, Angular, and Vue.js.
         <br>
