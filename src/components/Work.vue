@@ -11,7 +11,7 @@
       <div class="w-info-group">
         <!--<img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">-->
         <div class="w-info" style="padding-left: 2%">
-          <h2>Software Engineer (Intern to Junior Engineer)</h2>
+          <h2>Software Engineer (Intern to Junior)</h2>
           <h3>NetGroup OÜ</h3>
           <p>
             Contributed to the development of large-scale public- and private-sector web platforms, including national digital services and a commercial e-commerce system.

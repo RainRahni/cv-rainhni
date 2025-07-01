@@ -39,6 +39,7 @@
     </div>
     <div class="profp">
       <div class="profile-container">
+        <!-- Profile image with borders -->
         <div class="profile-wrapper">
           <img class="profile-img"
                src="~@/assets/Rain-stiparengu-2023.jpg">
@@ -83,12 +84,33 @@ h1 {
   filter: brightness(0) saturate(100%) invert(27%) sepia(43%) saturate(4094%) hue-rotate(218deg) brightness(99%)
   contrast(91%);
 }
+/* Apply animations to different sections */
 .box {
   background-color: cornflowerblue;
   width: 150px;
   text-align: center;
   border-radius: 20px 20px 20px 0px;
+  animation: dropFromTop 1s ease-out;
 }
+
+.name {
+  animation: slideFromLeft 1s ease-out 0.3s both;
+}
+
+.occupation {
+  animation: slideFromLeft 1s ease-out 0.5s both;
+}
+
+.info-logo {
+  display: flex;
+  margin-top: 1%;
+  animation: slideFromLeft 1s ease-out 0.7s both;
+}
+
+.links {
+  animation: slideFromBottom 1s ease-out 1s both;
+}
+
 img {
   vertical-align: bottom;
 }
@@ -107,6 +129,7 @@ a {
   overflow-wrap: break-word;
 }
 
+/* New styles for animated circles */
 .profp {
   position: relative;
   display: flex;
@@ -129,6 +152,7 @@ a {
   display: inline-block;
 }
 
+/* Inner border - cornflower blue, connected to image, appears first, half width */
 .profile-wrapper::before {
   content: '';
   position: absolute;
@@ -142,6 +166,7 @@ a {
   animation: borderAppear 2s ease-out;
 }
 
+/* Outer border - sky blue, wider, appears second, connects to inner */
 .profile-wrapper::after {
   content: '';
   position: absolute;
@@ -163,6 +188,40 @@ a {
   display: block;
   position: relative;
   z-index: 10;
+}
+
+/* Animation keyframes */
+@keyframes dropFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes borderAppear {
@@ -228,4 +287,9 @@ a {
   }
 }
 
+
 </style>
+
+<script setup>
+// Your script setup content goes here
+</script>
