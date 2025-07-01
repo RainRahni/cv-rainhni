@@ -12,8 +12,10 @@
           <img class="stack-img" src="~@/assets/taltech-logo.png">
           <div class="ed-info" style="padding-left: 2%">
             <h3>Bachelor of Technology</h3>
-            <h2>Informatics/Computer Science</h2>
+            <h2>Informatics/Computer Science (Cum Laude, GPA 4.74)</h2>
             <h4>Tallinn University of Technology</h4>
+            <a target="_blank" class="link" href="https://digikogu.taltech.ee/en/Item/9d540de3-925d-4f0f-aa21-b63f9d0d16e6">Link to my thesis</a>
+            <a target="_blank" class="link" href="https://www.youtube.com/live/BrnFsh4IaLY?feature=shared&start=6988">Link to my speech</a>
           </div>
         </div>
         <ul class="times" style="padding-right: 2%">

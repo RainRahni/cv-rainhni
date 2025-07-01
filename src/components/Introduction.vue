@@ -7,7 +7,7 @@
         <div>
           <h1 class="name" style="color: black;font-weight: bold">Rain Rähni</h1>
           <h2 class="occupation"
-              style="color: black;font-weight: bold">Bachelor`s computer science student</h2>
+              style="color: black;font-weight: bold">Junior Software Engineer</h2>
         </div>
         <br>
         <div class="info-logo">

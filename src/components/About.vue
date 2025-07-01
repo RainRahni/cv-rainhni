@@ -6,20 +6,18 @@
     <div class="about-text">
       <h1 class="aboutHead" style="text-align: center; font-weight: bold">About me</h1>
       <p style="text-align: justify">
-        Hi, I'm Rain Rähni, a 2nd-year Bachelor's student in Informatics/Computer Science at Tallinn University of
-        Technology. I've honed my skills in Backend Development using Java, Spring Boot, .NET through several school
-        and personal projects. I also have experience with Python, Typescript, Angular, React and Vue.js contributing to my
-        versatile skill set. I am eager to deepen my understanding and contribute to innovative solutions
-        in these fields.
+        Hi, I'm Rain Rähni — a Junior Full-Stack Developer with a strong focus on building accessible, user-centered web applications.
+        I have hands-on experience with backend technologies like Java, Spring Boot, .NET, and Python, and I work fluently with frontend
+        frameworks including React, Angular, and Vue.js.
         <br>
         <br>
-        As an IT student, I aspire to impact the world positively through technological developments, whether initiated by me or others. In the future, I aim to own a company
-        that helps people's lives. Beyond my technical skills, I bring communication to my work. I'm also an active
-        football player and enjoy spending time with friends.
+        Beyond tech, I bring strong communication skills, a collaborative mindset, and the discipline of a competitive football player to everything
+        I do. I aspire to make a positive impact through technological developments — whether initiated by me or by supporting the work of others.
+        In the future, I aim to lead a company that helps improve people’s lives. Outside of work, I enjoy football and spending time with friends.
       </p>
       <div class="syt">
         <a class="resume-button clickable" style="text-align: center"
-           href="https://drive.google.com/file/d/1ahZFxVTBA--rvbXrwNDKe-snA9ApAyPB/view?usp=sharing"
+           href="https://drive.google.com/file/d/1Qw6mTn-JEBoq5QkraXqx4xroC1jwD1e0/view?usp=sharing"
          target="_blank">View Resume</a>
       </div>
       </div>

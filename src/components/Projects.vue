@@ -9,9 +9,9 @@
           <div class="tech-info">
             <div>
               <h5 class="tech-name">Java</h5>
-              <span>70%</span>
+              <span>80%</span>
             </div>
-            <progress max="100" value="70">
+            <progress max="100" value="80">
             </progress>
           </div>
         </div>
@@ -20,20 +20,9 @@
           <div class="tech-info">
             <div>
               <h5 class="tech-name">C#</h5>
-              <span>60%</span>
+              <span>80%</span>
             </div>
-            <progress max="100" value="60">
-            </progress>
-          </div>
-        </div>
-        <div class="tech-item">
-          <img class="stack-img" src="~@/assets/spring-logo.png">
-          <div class="tech-info" >
-            <div>
-              <h5 class="tech-name">Spring Boot</h5>
-              <span>60%</span>
-            </div>
-            <progress max="100" value="60">
+            <progress max="100" value="80">
             </progress>
           </div>
         </div>
@@ -42,9 +31,20 @@
           <div class="tech-info" >
             <div>
               <h5 class="tech-name">.NET</h5>
-              <span>60%</span>
+              <span>80%</span>
             </div>
-            <progress max="100" value="60">
+            <progress max="100" value="80">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/spring-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">Spring Boot</h5>
+              <span>70%</span>
+            </div>
+            <progress max="100" value="70">
             </progress>
           </div>
         </div>
@@ -53,20 +53,9 @@
           <div class="tech-info" >
             <div>
               <h5 class="tech-name">Entity Framework</h5>
-              <span>60%</span>
+              <span>70%</span>
             </div>
-            <progress max="100" value="60">
-            </progress>
-          </div>
-        </div>
-        <div class="tech-item">
-          <img class="stack-img" src="~@/assets/python-logo.png">
-          <div class="tech-info" >
-            <div>
-              <h5 class="tech-name">Python</h5>
-              <span>40%</span>
-            </div>
-            <progress max="100" value="40">
+            <progress max="100" value="70">
             </progress>
           </div>
         </div>
@@ -75,6 +64,17 @@
           <div class="tech-info" >
             <div>
               <h5 class="tech-name">PostgreSQL</h5>
+              <span>70%</span>
+            </div>
+            <progress max="100" value="70">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/python-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">Python</h5>
               <span>50%</span>
             </div>
             <progress max="100" value="50">
@@ -86,9 +86,31 @@
           <div class="tech-info" >
             <div>
               <h5 class="tech-name">MSSQL Express</h5>
-              <span>30%</span>
+              <span>40%</span>
             </div>
-            <progress max="100" value="30">
+            <progress max="100" value="40">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img " src="~@/assets/PHPlogo.png" style="padding-left: 10px">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">PHP</h5>
+              <span>40%</span>
+            </div>
+            <progress max="100" value="40">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img " src="~@/assets/Laravel.png" style="padding-left: 10px">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">PHP Laravel</h5>
+              <span>40%</span>
+            </div>
+            <progress max="100" value="40">
             </progress>
           </div>
         </div>
@@ -96,14 +118,26 @@
       <br>
       <div class="tech-list">
         <h3 class="tech-list-name">Web Development</h3>
+
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/reactjslogo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">React</h5>
+              <span>80%</span>
+            </div>
+            <progress max="100" value="80">
+            </progress>
+          </div>
+        </div>
         <div class="tech-item">
           <img class="stack-img" src="~@/assets/js-logo.png">
           <div class="tech-info" >
             <div>
               <h5 class="tech-name">Javascript</h5>
-              <span>50%</span>
+              <span>70%</span>
             </div>
-            <progress max="100" value="50">
+            <progress max="100" value="70">
             </progress>
           </div>
         </div>
@@ -112,6 +146,28 @@
           <div class="tech-info" >
             <div>
               <h5 class="tech-name">Typescript</h5>
+              <span>70%</span>
+            </div>
+            <progress max="100" value="70">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/html-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">HTML</h5>
+              <span>70%</span>
+            </div>
+            <progress max="100" value="70">
+            </progress>
+          </div>
+        </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/css-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">CSS/SCSS</h5>
               <span>60%</span>
             </div>
             <progress max="100" value="60">
@@ -130,21 +186,10 @@
           </div>
         </div>
         <div class="tech-item">
-          <img class="stack-img" src="~@/assets/reactjslogo.png">
+          <img class="stack-img" src="~@/assets/nextjslogo.png">
           <div class="tech-info" >
             <div>
-              <h5 class="tech-name">React</h5>
-              <span>50%</span>
-            </div>
-            <progress max="100" value="50">
-            </progress>
-          </div>
-        </div>
-        <div class="tech-item">
-          <img class="stack-img" src="~@/assets/html-logo.png">
-          <div class="tech-info" >
-            <div>
-              <h5 class="tech-name">HTML</h5>
+              <h5 class="tech-name">Next.js</h5>
               <span>50%</span>
             </div>
             <progress max="100" value="50">
@@ -162,17 +207,6 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
-          <img class="stack-img" src="~@/assets/css-logo.png">
-          <div class="tech-info" >
-            <div>
-              <h5 class="tech-name">CSS/SCSS</h5>
-              <span>40%</span>
-            </div>
-            <progress max="100" value="40">
-            </progress>
-          </div>
-        </div>
       </div>
       <br>
       <div class="tech-list">
@@ -182,9 +216,9 @@
             <div class="tech-info" >
               <div>
                 <h5 class="tech-name">Git</h5>
-                <span>40%</span>
+                <span>60%</span>
               </div>
-              <progress max="100" value="40">
+              <progress max="100" value="60">
               </progress>
             </div>
           </div>
@@ -193,12 +227,23 @@
             <div class="tech-info" >
               <div>
                 <h5 class="tech-name">Data structures & algorithms</h5>
-                <span>40%</span>
+                <span>60%</span>
               </div>
-              <progress max="100" value="40">
+              <progress max="100" value="60">
               </progress>
             </div>
           </div>
+        <div class="tech-item">
+          <img class="stack-img" src="~@/assets/wcg.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">WCAG Compatibility</h5>
+              <span>50%</span>
+            </div>
+            <progress max="100" value="50">
+            </progress>
+          </div>
+        </div>
       </div>
       </div>
     <div class="project">
@@ -282,6 +327,25 @@
             <li>
               Used Java, Kryonet library, Gradle and the libGDX framework to achieve functionality.
               The project was managed using GitLab.
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="project-item">
+          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">COOS app</h3>
+          <button style="padding-left: 1rem; font-weight: bold; background: none; border: none" aria-disabled="true" disabled>
+            Download link (coming soon)</button>
+
+          <h4 style="padding-left: 1rem; font-weight: bold; width: 100%">Work in progress</h4>
+          <ul>
+            <li>
+              Developing a mobile application where users can choose their groceries from stores around Estonia.
+              After choosing groceries, the algorithm calculates the cheapest path to buy these items, taking into
+              account price, sales, and whether the product is currently available at the store.
+            </li>
+            <li>
+              Currently using React Native, PostgreSQL and Spring Boot.
+              The project is managed using GitHub.
             </li>
           </ul>
         </div>

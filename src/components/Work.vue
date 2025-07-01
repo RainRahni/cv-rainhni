@@ -8,10 +8,37 @@
       <h1 style="text-align: center;" class="workExp">Work Experience</h1>
       <br>
       <div class="w-item">
+      <div class="w-info-group">
+        <!--<img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">-->
+        <div class="w-info" style="padding-left: 2%">
+          <h2>Software Engineer (Intern to Junior Engineer)</h2>
+          <h3>NetGroup OÜ</h3>
+          <p>
+            Contributed to the development of large-scale public- and private-sector web platforms, including national digital services and a commercial e-commerce system.
+          </p>
+          <ul>
+            <li>Built new views and improved existing ones across web applications, enhancing user experience and WCAG accessibility.</li>
+            <li>Developed backend functionality, extended APIs, and implemented business logic for new features.</li>
+            <li>Collaborated with cross-functional teams to deliver reliable, user-focused solutions in production environments.</li>
+          </ul>
+        </div>
+
+      </div>
+      <ul class="times" style="padding-right: 2%">
+        <li>
+          <div class="time">Sep&nbsp;-&nbsp;2024</div>
+        </li>
+        <li>
+          <div class="time">Present</div>
+        </li>
+      </ul>
+    </div>
+      <br>
+      <div class="w-item">
         <div class="w-info-group">
           <!--<img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">-->
           <div class="w-info" style="padding-left: 2%">
-            <h2>Assistant Lecturer</h2>
+            <h2>Teaching Assistant</h2>
             <h3>Tallinn University of Technology</h3>
             <p>
               Provided Java programming tutoring to students by assisting them with their assignments and
@@ -33,7 +60,7 @@
         <div class="w-info-group">
           <!--<img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">-->
           <div class="w-info" style="padding-left: 2%">
-            <h2>Assistant Lecturer</h2>
+            <h2>Teaching Assistant</h2>
             <h3>Tallinn University of Technology</h3>
             <p>
               Provided Java programming, libGdx, Gradle tutoring to students by assisting them with creation of their
@@ -55,7 +82,7 @@
         <div class="w-info-group">
           <!--<img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">-->
           <div class="w-info" style="padding-left: 2%">
-            <h2>Assistant Lecturer</h2>
+            <h2>Teaching Assistant</h2>
             <h3>Tallinn University of Technology</h3>
             <p>
               Provided Python programming tutoring to students by assisting them with assignments and mark their
@@ -76,7 +103,7 @@
       <div class="w-item" style="padding: 3% 5% 3% 5%;">
         <div class="w-info-group">
           <div class="w-info" style="margin-right: 10%">
-            <h2>Assistant Lecturer</h2>
+            <h2>Teaching Assistant</h2>
             <h3>Tallinn University of Technology</h3>
             <p>
               Provided assistance with HTML, CSS, Javascript and Python in informatics introductory event "INIT-23".
@@ -94,12 +121,12 @@
 </template>
 
 <style scoped>
-
 .w-info-group {
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 .w-item {
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -108,6 +135,7 @@
   align-items: center;
   padding: 2% 5% 2% 5%;
 }
+
 .whole-work {
   display: flex;
   flex-direction: column;
@@ -116,57 +144,86 @@
   padding-left: 20%;
   padding-right: 20%;
 }
-ul, li{
-  list-style: none;
+
+/* GLOBAL RESET - no default bullets or padding/margin */
+ul, li {
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
-.times{
+
+/* TIMELINE DATES — vertical line and custom circle bullets */
+.times {
   border-radius: 12px;
   position: relative;
 }
-li{
+
+.times li {
   padding-bottom: 1.5rem;
   border-left: 1px solid cornflowerblue;
   position: relative;
   padding-left: 20px;
   margin-left: 10px;
-  &:last-child{
-    border: 0px;
-    padding-bottom: 0;
-  }
-  &:before{
-    content: '';
-    width: 15px;
-    height: 15px;
-    background: white;
-    border: 1px solid cornflowerblue;
-    box-shadow: 3px 3px 0px cornflowerblue;
-    border-radius: 50%;
-    position: absolute;
-    left: -10px;
-    top: -1px;
-  }
+  list-style: none; /* keep none here */
 }
+
+.times li:last-child {
+  border-left: 0;
+  padding-bottom: 0;
+}
+
+.times li::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid cornflowerblue;
+  box-shadow: 3px 3px 0px cornflowerblue;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: -1px;
+}
+
+/* WORK DESCRIPTION BULLET POINTS — normal discs */
+.w-info ul {
+  list-style-type: disc;       /* enable disc bullets */
+  padding-left: 1.5rem;        /* indent for bullets */
+  margin: 0.5rem 0;
+}
+
+.w-info ul li {
+  list-style-type: disc;       /* bullets on each li */
+  margin: 0.3rem 0;
+  padding: 0;
+  border: none;
+}
+
+/* Text colors and fonts */
 .work {
   color: black;
 }
-.time{
+
+.time {
   color: black;
   font-family: sans-serif;
   font-weight: 500;
 }
+
 .w-item:hover {
   transform: scale3d(105%, 105%, 105%);
   background-color: #a9fdfd;
 }
+
 .workExp {
   margin-left: 20%;
 }
-@media screen and(max-width: 1380px) {
+
+@media screen and (max-width: 1380px) {
   .whole-work {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
   .work h1 {
     margin-left: 0;
@@ -182,6 +239,5 @@ li{
     font-size: 1px;
   }
 }
-
-
 </style>
+
