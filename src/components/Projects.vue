@@ -1,10 +1,10 @@
 <template>
-  <div class="whole-tech">
+  <div class="whole-tech" ref="techSection">
     <div class="tech-stack">
       <h1 class="skill-header">Tech stack</h1>
-      <div class="tech-list">
+      <div class="tech-list" :class="{ 'animate-tech': isTechVisible }">
         <h3 class="tech-list-name">Backend Development</h3>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '0.1s' }">
           <img class="stack-img" src="~@/assets/java.png">
           <div class="tech-info">
             <div>
@@ -15,7 +15,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '0.2s' }">
           <img class="stack-img" src="~@/assets/cSharplogo.png">
           <div class="tech-info">
             <div>
@@ -26,7 +26,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '0.3s' }">
           <img class="stack-img" src="../assets/netlogo.png">
           <div class="tech-info" >
             <div>
@@ -37,7 +37,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '0.4s' }">
           <img class="stack-img" src="~@/assets/spring-logo.png">
           <div class="tech-info" >
             <div>
@@ -48,7 +48,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '0.5s' }">
           <img class="stack-img" src="~@/assets/efLogo.png">
           <div class="tech-info" >
             <div>
@@ -59,7 +59,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '0.6s' }">
           <img class="stack-img " src="~@/assets/postgresqllogo.png" style="padding-left: 10px">
           <div class="tech-info" >
             <div>
@@ -70,7 +70,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '0.7s' }">
           <img class="stack-img" src="~@/assets/python-logo.png">
           <div class="tech-info" >
             <div>
@@ -81,7 +81,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '0.8s' }">
           <img class="stack-img " src="~@/assets/mssqldbLogo.png" style="padding-left: 10px">
           <div class="tech-info" >
             <div>
@@ -92,7 +92,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '0.9s' }">
           <img class="stack-img " src="~@/assets/PHPlogo.png" style="padding-left: 10px">
           <div class="tech-info" >
             <div>
@@ -103,7 +103,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '1.0s' }">
           <img class="stack-img " src="~@/assets/Laravel.png" style="padding-left: 10px">
           <div class="tech-info" >
             <div>
@@ -116,10 +116,10 @@
         </div>
       </div>
       <br>
-      <div class="tech-list">
+      <div class="tech-list" :class="{ 'animate-tech': isTechVisible }">
         <h3 class="tech-list-name">Web Development</h3>
 
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '1.1s' }">
           <img class="stack-img" src="~@/assets/reactjslogo.png">
           <div class="tech-info" >
             <div>
@@ -130,7 +130,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '1.2s' }">
           <img class="stack-img" src="~@/assets/js-logo.png">
           <div class="tech-info" >
             <div>
@@ -141,7 +141,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '1.3s' }">
           <img class="stack-img" src="~@/assets/tslogo.png">
           <div class="tech-info" >
             <div>
@@ -152,7 +152,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '1.4s' }">
           <img class="stack-img" src="~@/assets/html-logo.png">
           <div class="tech-info" >
             <div>
@@ -163,7 +163,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '1.5s' }">
           <img class="stack-img" src="~@/assets/css-logo.png">
           <div class="tech-info" >
             <div>
@@ -174,7 +174,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '1.6s' }">
           <img class="stack-img" src="~@/assets/angularlogo.png">
           <div class="tech-info" >
             <div>
@@ -185,7 +185,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '1.7s' }">
           <img class="stack-img" src="~@/assets/nextjslogo.png">
           <div class="tech-info" >
             <div>
@@ -196,7 +196,7 @@
             </progress>
           </div>
         </div>
-        <div class="tech-item">
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '1.8s' }">
           <img class="stack-img" src="~@/assets/vue-logo.png">
           <div class="tech-info" >
             <div>
@@ -209,31 +209,31 @@
         </div>
       </div>
       <br>
-      <div class="tech-list">
+      <div class="tech-list" :class="{ 'animate-tech': isTechVisible }">
         <h3 class="tech-list-name">Other skills</h3>
-          <div class="tech-item">
-            <img class="stack-img" src="~@/assets/git-logo.png">
-            <div class="tech-info" >
-              <div>
-                <h5 class="tech-name">Git</h5>
-                <span>60%</span>
-              </div>
-              <progress max="100" value="60">
-              </progress>
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '1.9s' }">
+          <img class="stack-img" src="~@/assets/git-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">Git</h5>
+              <span>60%</span>
             </div>
+            <progress max="100" value="60">
+            </progress>
           </div>
-          <div class="tech-item">
-            <img class="stack-img" src="~@/assets/dsa-logo.png">
-            <div class="tech-info" >
-              <div>
-                <h5 class="tech-name">Data structures & algorithms</h5>
-                <span>60%</span>
-              </div>
-              <progress max="100" value="60">
-              </progress>
+        </div>
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '2.0s' }">
+          <img class="stack-img" src="~@/assets/dsa-logo.png">
+          <div class="tech-info" >
+            <div>
+              <h5 class="tech-name">Data structures & algorithms</h5>
+              <span>60%</span>
             </div>
+            <progress max="100" value="60">
+            </progress>
           </div>
-        <div class="tech-item">
+        </div>
+        <div class="tech-item" :class="{ 'animate-tech-item': isTechVisible }" :style="{ transitionDelay: '2.1s' }">
           <img class="stack-img" src="~@/assets/wcg.png">
           <div class="tech-info" >
             <div>
@@ -245,11 +245,11 @@
           </div>
         </div>
       </div>
-      </div>
+    </div>
     <div class="project">
       <h1 class="skill-header">Project</h1>
       <div class="project-list">
-        <div class="project-item">
+        <div class="project-item" ref="project0" :class="{ 'animate-project': projectVisibility[0] }" :style="{ transitionDelay: '0.1s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Room renting website</h3>
           <a style="padding-left: 1rem; font-weight: bold;" class="link"
              href="https://mausma.pages.taltech.ee/iti0105-2022/public/pages/room-rent-webpage-main.html" target="_blank">
@@ -269,13 +269,13 @@
           </ul>
         </div>
         <br>
-        <div class="project-item">
+        <div class="project-item" ref="project1" :class="{ 'animate-project': projectVisibility[1] }" :style="{ transitionDelay: '0.1s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Post-office website</h3>
           <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/post-office-back" class="link"
              target="_blank">Backend repo</a>
           <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/post-office-front" class="link"
              target="_blank">
-          Frontend repo</a>
+            Frontend repo</a>
           <h4 style="padding-left: 1rem; font-weight: bold">May-2024 to Jun-2024</h4>
           <ul>
             <li>
@@ -291,7 +291,7 @@
           </ul>
         </div>
         <br>
-        <div class="project-item">
+        <div class="project-item" ref="project2" :class="{ 'animate-project': projectVisibility[2] }" :style="{ transitionDelay: '0.1s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Calorie tracking website</h3>
           <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/barv-backend" class="link"
              target="_blank">Backend repo</a>
@@ -312,7 +312,7 @@
           </ul>
         </div>
         <br>
-        <div class="project-item">
+        <div class="project-item" ref="project3" :class="{ 'animate-project': projectVisibility[3] }" :style="{ transitionDelay: '0.1s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Multiplayer shooting game</h3>
           <a style="padding-left: 1rem; font-weight: bold;" class="link"
              href="https://youtu.be/R_mRNq5_lO0?feature=shared&t=53s" target="_blank">
@@ -331,7 +331,7 @@
           </ul>
         </div>
         <br>
-        <div class="project-item">
+        <div class="project-item" ref="project4" :class="{ 'animate-project': projectVisibility[4] }" :style="{ transitionDelay: '0.1s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">COOS app</h3>
           <button style="padding-left: 1rem; font-weight: bold; background: none; border: none" aria-disabled="true" disabled>
             Download link (coming soon)</button>
@@ -354,8 +354,6 @@
   </div>
 </template>
 <style>
-
-
 a {
   margin-right: 4%;
   color: black;
@@ -382,6 +380,14 @@ h1 {
   width: 80%;
   border-radius: 5%;
   padding: 3%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.project-item.animate-project {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .tech-list {
@@ -390,10 +396,28 @@ h1 {
   width: 80%;
   border-radius: 12px;
   padding: 20px;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+.tech-list.animate-tech {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .tech-item {
   display: inline-flex;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
+
+.tech-item.animate-tech-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 div.tech-item div.tech-info
 div {
   display: flex;
@@ -425,7 +449,7 @@ progress {
   line-height: 2;
 }
 .link:hover{
-    color:cornflowerblue;
+  color:cornflowerblue;
 }
 @media(max-width: 1380px) {
   .whole-tech {
@@ -450,10 +474,77 @@ progress {
     flex-direction: column;
     width: 90%;
   }
-
-
-
 }
 </style>
-<script setup>
+<script>
+export default {
+  data() {
+    return {
+      isTechVisible: false,
+      projectVisibility: [false, false, false, false, false]
+    }
+  },
+  mounted() {
+    this.setupIntersectionObserver();
+    this.setupProjectObservers();
+  },
+  beforeUnmount() {
+    if (this.techObserver) {
+      this.techObserver.disconnect();
+    }
+    if (this.projectObservers) {
+      this.projectObservers.forEach(observer => observer.disconnect());
+    }
+  },
+  methods: {
+    setupIntersectionObserver() {
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+      };
+
+      this.techObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.isTechVisible = true;
+            this.techObserver.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      this.techObserver.observe(this.$refs.techSection);
+    },
+
+    setupProjectObservers() {
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3 // Trigger when 30% of the project is visible
+      };
+
+      this.projectObservers = [];
+
+      // Create observers for each project
+      for (let i = 0; i < 5; i++) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              this.projectVisibility[i] = true;
+              observer.unobserve(entry.target);
+            }
+          });
+        }, options);
+
+        this.projectObservers.push(observer);
+
+        // Observe each project element
+        const projectRef = this.$refs[`project${i}`];
+        if (projectRef) {
+          observer.observe(projectRef);
+        }
+      }
+    }
+  }
+}
 </script>
