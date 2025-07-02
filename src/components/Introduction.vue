@@ -84,13 +84,12 @@ h1 {
   filter: brightness(0) saturate(100%) invert(27%) sepia(43%) saturate(4094%) hue-rotate(218deg) brightness(99%)
   contrast(91%);
 }
-/* Apply animations to different sections */
 .box {
   background-color: cornflowerblue;
   width: 150px;
   text-align: center;
   border-radius: 20px 20px 20px 0px;
-  animation: dropFromTop 1s ease-out;
+  animation: dropFromTop 1s ;
 }
 
 .name {
