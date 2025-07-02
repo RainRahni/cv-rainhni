@@ -1,12 +1,54 @@
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
+const recommendationSection = ref(null)
+const recommendationVisibility = ref([false])
+let recommendationObservers = []
+
+const setupRecommendationObservers = () => {
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3 // Trigger when 30% of the recommendation item is visible
+  }
+
+  recommendationObservers = []
+
+  // Create observer for the recommendation item
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        recommendationVisibility.value[0] = true
+        observer.unobserve(entry.target)
+      }
+    })
+  }, options)
+
+  recommendationObservers.push(observer)
+
+  // Observe the recommendation item element
+  const recommendationRef = document.querySelector(`[data-recommendation-index="0"]`)
+  if (recommendationRef) {
+    observer.observe(recommendationRef)
+  }
+}
+
+onMounted(() => {
+  setupRecommendationObservers()
+})
+
+onBeforeUnmount(() => {
+  if (recommendationObservers) {
+    recommendationObservers.forEach(observer => observer.disconnect())
+  }
+})
 </script>
 
 <template>
-  <div class="whole-rec">
+  <div class="whole-rec" ref="recommendationSection">
     <div class="recommendation">
       <h1 style="text-align: center;">Recommendations</h1>
-      <div class="rec-item">
+      <div class="rec-item" :data-recommendation-index="0" :class="{ 'animate-recommendation': recommendationVisibility[0] }" :style="{ transitionDelay: '0.1s' }">
         <div class="profile">
           <img src="~@/assets/ago-circ.png" style="width: 100%; max-width: 20%; padding: 4%;">
           <div class="profile-info">
@@ -20,42 +62,56 @@
           </div>
         </div>
         <p style="padding-left: 4%;padding-right: 4%; text-align: justify">
-          Rain Rähni began his studies in the TalTech Bachelor’s program in Informatics in the fall of 2022.
-          His academic achievements have earned his a place on the dean’s list since the fall semester of 2022,
+          Rain Rähni began his studies in the TalTech Bachelor's program in Informatics in the fall of 2022.
+          His academic achievements have earned his a place on the dean's list since the fall semester of 2022,
           which is an honor bestowed upon approximately the top 10% of students. Over the course of three semesters,
           Rain has accumulated 113 ECTS credits with a weighted average grade of 4.7. Rain actively contributes to
           promoting his field of study. He participated in creating an introductory video clip for the informatics
           curriculum and helped organize the INIT event, where approximately 50 high school graduates were introduced
           to the TalTech informatics program. Rain is an exemplary and responsible student, consistently giving
           his best effort. His goal is to acquire new knowledge to enhance existing services and create new
-          opportunities, ultimately improving people’s lives. During the fall semester, Rain served as a teaching
+          opportunities, ultimately improving people's lives. During the fall semester, Rain served as a teaching
           assistant for the introductory programming course, which had over 450 students enrolled. He assists new
           students in getting acquainted with programming. Additionally, in the spring semester, he is a teaching
           assistant for the fundamental programming course and software development project. In this role, he helps
           create and organize study materials and provides feedback to students on their code. His teaching experience
           is highly valued in the job market
-          </p>
-          <div class="footer" style="margin-right: 3em; padding-bottom: 20px; display: flex; flex-direction: row-reverse;">
-              - March 4, 2024
-          </div>
+        </p>
+        <div class="footer" style="margin-right: 3em; padding-bottom: 20px; display: flex; flex-direction: row-reverse;">
+          - March 4, 2024
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-
-
 .profile {
   display: flex;
   align-items: center;
+}
+.whole-rec h1 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
 }
 .rec-item {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5%;
   background-color: white;
+  /* Animation properties */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+.rec-item.animate-recommendation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .whole-rec {
   color: black;
   display: flex;
@@ -65,9 +121,11 @@
   padding-left: 20%;
   padding-right: 20%;
 }
+
 a:hover {
   color: cornflowerblue;
 }
+
 @media(max-width: 1380px) {
   .whole-rec {
     display: flex;

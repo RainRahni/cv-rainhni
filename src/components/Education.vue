@@ -1,13 +1,57 @@
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
+const educationSection = ref(null)
+const educationVisibility = ref([false, false])
+let educationObservers = []
+
+const setupEducationObservers = () => {
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3 // Trigger when 30% of the education item is visible
+  }
+
+  educationObservers = []
+
+  // Create observers for each education item
+  for (let i = 0; i < 2; i++) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          educationVisibility.value[i] = true
+          observer.unobserve(entry.target)
+        }
+      })
+    }, options)
+
+    educationObservers.push(observer)
+
+    // Observe each education item element
+    const educationRef = document.querySelector(`[data-education-index="${i}"]`)
+    if (educationRef) {
+      observer.observe(educationRef)
+    }
+  }
+}
+
+onMounted(() => {
+  setupEducationObservers()
+})
+
+onBeforeUnmount(() => {
+  if (educationObservers) {
+    educationObservers.forEach(observer => observer.disconnect())
+  }
+})
 </script>
 
 <template>
-  <div class="whole-ed">
+  <div class="whole-ed" ref="educationSection">
     <div class="education">
       <h1 class="edh" style="text-align: center;">Education & Certificates</h1>
       <br>
-      <div class="ed-item taltech">
+      <div class="ed-item taltech" :data-education-index="0" :class="{ 'animate-education': educationVisibility[0] }" :style="{ transitionDelay: '0.1s' }">
         <div class="ed-info-group">
           <img class="stack-img" src="~@/assets/taltech-logo.png">
           <div class="ed-info" style="padding-left: 2%">
@@ -29,7 +73,7 @@
 
       </div>
       <br>
-      <div class="ed-item">
+      <div class="ed-item" :data-education-index="1" :class="{ 'animate-education': educationVisibility[1] }" :style="{ transitionDelay: '0.2s' }">
         <div class="ed-info-group">
           <img class="stack-img" src="~@/assets/cambridge-logo.png">
           <div class="ed-info" style="padding-left: 2%">
@@ -65,7 +109,17 @@
   border-radius: 5%;
   align-items: center;
   padding: 2% 5% 2% 5%;
+  /* Animation properties */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+.ed-item.animate-education {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .whole-ed {
   display: flex;
   flex-direction: column;
@@ -120,7 +174,12 @@ li {
   max-width: 12%;
   vertical-align: bottom;
 }
-
+.whole-ed h1 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
 @media (max-width: 1380px) {
   .whole-ed {
     display: flex;

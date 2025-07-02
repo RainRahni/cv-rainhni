@@ -1,40 +1,84 @@
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
+const workSection = ref(null)
+const workVisibility = ref([false, false, false, false, false])
+let workObservers = []
+
+const setupWorkObservers = () => {
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3 // Trigger when 30% of the work item is visible
+  }
+
+  workObservers = []
+
+  // Create observers for each work item
+  for (let i = 0; i < 5; i++) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          workVisibility.value[i] = true
+          observer.unobserve(entry.target)
+        }
+      })
+    }, options)
+
+    workObservers.push(observer)
+
+    // Observe each work item element
+    const workRef = document.querySelector(`[data-work-index="${i}"]`)
+    if (workRef) {
+      observer.observe(workRef)
+    }
+  }
+}
+
+onMounted(() => {
+  setupWorkObservers()
+})
+
+onBeforeUnmount(() => {
+  if (workObservers) {
+    workObservers.forEach(observer => observer.disconnect())
+  }
+})
 </script>
 
 <template>
-  <div class="whole-work">
+  <div class="whole-work" ref="workSection">
     <div class="work" style="padding-bottom: 5%;">
       <h1 style="text-align: center;" class="workExp">Work Experience</h1>
       <br>
-      <div class="w-item">
-      <div class="w-info-group">
-        <!--<img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">-->
-        <div class="w-info" style="padding-left: 2%">
-          <h2>Software Engineer (Intern to Junior)</h2>
-          <h3>NetGroup OÜ</h3>
-          <p>
-            Contributed to the development of large-scale public- and private-sector web platforms, including national digital services and a commercial e-commerce system.
-          </p>
-          <ul>
-            <li>Built new views and improved existing ones across web applications, enhancing user experience and WCAG accessibility.</li>
-            <li>Developed backend functionality, extended APIs, and implemented business logic for new features.</li>
-            <li>Collaborated with cross-functional teams to deliver reliable, user-focused solutions in production environments.</li>
-          </ul>
-        </div>
+      <div class="w-item" :data-work-index="0" :class="{ 'animate-work': workVisibility[0] }" :style="{ transitionDelay: '0.1s' }">
+        <div class="w-info-group">
+          <!--<img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">-->
+          <div class="w-info" style="padding-left: 2%">
+            <h2>Software Engineer (Intern to Junior)</h2>
+            <h3>NetGroup OÜ</h3>
+            <p>
+              Contributed to the development of large-scale public- and private-sector web platforms, including national digital services and a commercial e-commerce system.
+            </p>
+            <ul>
+              <li>Built new views and improved existing ones across web applications, enhancing user experience and WCAG accessibility.</li>
+              <li>Developed backend functionality, extended APIs, and implemented business logic for new features.</li>
+              <li>Collaborated with cross-functional teams to deliver reliable, user-focused solutions in production environments.</li>
+            </ul>
+          </div>
 
+        </div>
+        <ul class="times" style="padding-right: 2%">
+          <li>
+            <div class="time">Sep&nbsp;-&nbsp;2024</div>
+          </li>
+          <li>
+            <div class="time">Present</div>
+          </li>
+        </ul>
       </div>
-      <ul class="times" style="padding-right: 2%">
-        <li>
-          <div class="time">Sep&nbsp;-&nbsp;2024</div>
-        </li>
-        <li>
-          <div class="time">Present</div>
-        </li>
-      </ul>
-    </div>
       <br>
-      <div class="w-item">
+      <div class="w-item" :data-work-index="1" :class="{ 'animate-work': workVisibility[1] }" :style="{ transitionDelay: '0.2s' }">
         <div class="w-info-group">
           <!--<img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">-->
           <div class="w-info" style="padding-left: 2%">
@@ -56,7 +100,7 @@
         </ul>
       </div>
       <br>
-      <div class="w-item">
+      <div class="w-item" :data-work-index="2" :class="{ 'animate-work': workVisibility[2] }" :style="{ transitionDelay: '0.3s' }">
         <div class="w-info-group">
           <!--<img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">-->
           <div class="w-info" style="padding-left: 2%">
@@ -78,7 +122,7 @@
         </ul>
       </div>
       <br>
-      <div class="w-item">
+      <div class="w-item" :data-work-index="3" :class="{ 'animate-work': workVisibility[3] }" :style="{ transitionDelay: '0.4s' }">
         <div class="w-info-group">
           <!--<img style="width: 9em; height: 10em; padding-left: 2%;" src="~@/assets/taltech-logo.jpg">-->
           <div class="w-info" style="padding-left: 2%">
@@ -100,7 +144,7 @@
         </ul>
       </div>
       <br>
-      <div class="w-item" style="padding: 3% 5% 3% 5%;">
+      <div class="w-item" :data-work-index="4" :class="{ 'animate-work': workVisibility[4] }" :style="{ transitionDelay: '0.5s' }" style="padding: 3% 5% 3% 5%;">
         <div class="w-info-group">
           <div class="w-info" style="margin-right: 10%">
             <h2>Teaching Assistant</h2>
@@ -134,6 +178,15 @@
   border-radius: 5%;
   align-items: center;
   padding: 2% 5% 2% 5%;
+  /* Animation properties */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.w-item.animate-work {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .whole-work {
@@ -240,4 +293,3 @@ ul, li {
   }
 }
 </style>
-
