@@ -315,7 +315,7 @@
         <div class="project-item" ref="project3" :class="{ 'animate-project': projectVisibility[3] }" :style="{ transitionDelay: '0.1s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Multiplayer shooting game</h3>
           <a style="padding-left: 1rem; font-weight: bold;" class="link"
-             href="https://youtu.be/R_mRNq5_lO0?feature=shared&t=53s" target="_blank">
+             href="https://youtu.be/QyWzJtDD8QM?feature=shared&t=53s" target="_blank">
             Demo link (starts at 0:53)</a>
           <h4 style="padding-left: 1rem; font-weight: bold">Feb-2023 to Jun-2023</h4>
           <ul>
@@ -335,7 +335,10 @@
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">COOS app</h3>
           <button style="padding-left: 1rem; font-weight: bold; background: none; border: none" aria-disabled="true" disabled>
             Download link (coming soon)</button>
-
+          <a style="padding-left: 1rem; font-weight: bold;" class="link"
+                                                    href="https://youtu.be/Jp6TfgUAibo?feature=shared" target="_blank">
+            Demo version before pivoting(coming soon)
+</a>
           <h4 style="padding-left: 1rem; font-weight: bold; width: 100%">Work in progress</h4>
           <ul>
             <li>
