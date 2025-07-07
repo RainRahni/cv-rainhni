@@ -87,7 +87,7 @@ onBeforeUnmount(() => {
         </div>
       </div>
       <div class="credit">
-        <h3> Made by Rain Rähni, 2024 </h3>
+        <h3> Made by Rain Rähni, 2025 </h3>
       </div>
     </div>
   </footer>
