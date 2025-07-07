@@ -333,11 +333,9 @@
         <br>
         <div class="project-item" ref="project4" :class="{ 'animate-project': projectVisibility[4] }" :style="{ transitionDelay: '0.1s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">COOS app</h3>
-          <button style="padding-left: 1rem; font-weight: bold; background: none; border: none" aria-disabled="true" disabled>
-            Download link (coming soon)</button>
           <a style="padding-left: 1rem; font-weight: bold;" class="link"
                                                     href="https://youtu.be/Jp6TfgUAibo?feature=shared" target="_blank">
-            Demo version before pivoting(coming soon)
+            Demo version before pivoting
 </a>
           <h4 style="padding-left: 1rem; font-weight: bold; width: 100%">Work in progress</h4>
           <ul>
