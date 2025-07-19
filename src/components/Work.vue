@@ -1,11 +1,14 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 const workSection = ref(null)
 const workVisibility = ref([false, false, false, false, false])
 let workObservers = []
 
-const setupWorkObservers = () => {
+const setupWorkObservers = async () => {
+  // Wait for the next DOM update cycle to ensure elements are rendered
+  await nextTick()
+
   const options = {
     root: null,
     rootMargin: '0px',
@@ -25,12 +28,13 @@ const setupWorkObservers = () => {
       })
     }, options)
 
-    workObservers.push(observer)
-
     // Observe each work item element
     const workRef = document.querySelector(`[data-work-index="${i}"]`)
     if (workRef) {
       observer.observe(workRef)
+      workObservers.push(observer)
+    } else {
+      console.warn(`Work element with index ${i} not found`)
     }
   }
 }

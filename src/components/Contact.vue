@@ -1,11 +1,14 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 const profileSection = ref(null)
 const profileVisibility = ref([false, false, false])
 let profileObservers = []
 
-const setupProfileObservers = () => {
+const setupProfileObservers = async () => {
+  // Wait for DOM to be fully rendered
+  await nextTick()
+
   const options = {
     root: null,
     rootMargin: '0px',
@@ -31,6 +34,8 @@ const setupProfileObservers = () => {
     const profileRef = document.querySelector(`[data-profile-index="${i}"]`)
     if (profileRef) {
       observer.observe(profileRef)
+    } else {
+      console.warn(`Profile element with data-profile-index="${i}" not found`)
     }
   }
 }
@@ -176,6 +181,12 @@ a {
 
 a:hover {
   color: cornflowerblue;
+}
+
+.info-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media(max-width: 1380px) {

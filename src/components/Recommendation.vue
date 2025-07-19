@@ -1,11 +1,14 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 const recommendationSection = ref(null)
 const recommendationVisibility = ref([false])
 let recommendationObservers = []
 
-const setupRecommendationObservers = () => {
+const setupRecommendationObservers = async () => {
+  // Wait for the next DOM update cycle to ensure elements are rendered
+  await nextTick()
+
   const options = {
     root: null,
     rootMargin: '0px',
@@ -24,12 +27,13 @@ const setupRecommendationObservers = () => {
     })
   }, options)
 
-  recommendationObservers.push(observer)
-
   // Observe the recommendation item element
   const recommendationRef = document.querySelector(`[data-recommendation-index="0"]`)
   if (recommendationRef) {
     observer.observe(recommendationRef)
+    recommendationObservers.push(observer)
+  } else {
+    console.warn('Recommendation element not found')
   }
 }
 

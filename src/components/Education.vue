@@ -1,11 +1,14 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 const educationSection = ref(null)
 const educationVisibility = ref([false, false])
 let educationObservers = []
 
-const setupEducationObservers = () => {
+const setupEducationObservers = async () => {
+  // Wait for DOM to be fully rendered
+  await nextTick()
+
   const options = {
     root: null,
     rootMargin: '0px',
@@ -31,6 +34,8 @@ const setupEducationObservers = () => {
     const educationRef = document.querySelector(`[data-education-index="${i}"]`)
     if (educationRef) {
       observer.observe(educationRef)
+    } else {
+      console.warn(`Education element with data-education-index="${i}" not found`)
     }
   }
 }
@@ -144,23 +149,26 @@ li {
   position: relative;
   padding-left: 20px;
   margin-left: 10px;
-  &:last-child{
-    border: 0px;
-    padding-bottom: 0;
-  }
-  &:before{
-    content: '';
-    width: 15px;
-    height: 15px;
-    background: white;
-    border: 1px solid cornflowerblue;
-    box-shadow: 3px 3px 0px cornflowerblue;
-    border-radius: 50%;
-    position: absolute;
-    left: -10px;
-    top: -1px;
-  }
 }
+
+li:last-child{
+  border: 0px;
+  padding-bottom: 0;
+}
+
+li:before{
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid cornflowerblue;
+  box-shadow: 3px 3px 0px cornflowerblue;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: -1px;
+}
+
 .time{
   color: black;
   font-family: sans-serif;
@@ -180,6 +188,19 @@ li {
   width: 100%;
   text-align: center;
 }
+
+.link {
+  display: block;
+  margin: 5px 0;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+
 @media (max-width: 1380px) {
   .whole-ed {
     display: flex;

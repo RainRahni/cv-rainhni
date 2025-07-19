@@ -26,6 +26,7 @@
 
   </div>
 </template>
+
 <style>
 .whole-about {
   display: grid;
@@ -133,15 +134,20 @@
   }
 }
 </style>
+
 <script>
 export default {
   data() {
     return {
-      isVisible: false
+      isVisible: false,
+      observer: null
     }
   },
   mounted() {
-    this.setupIntersectionObserver();
+    // Wait for the next tick to ensure DOM is rendered
+    this.$nextTick(() => {
+      this.setupIntersectionObserver();
+    });
   },
   beforeUnmount() {
     if (this.observer) {
@@ -150,6 +156,12 @@ export default {
   },
   methods: {
     setupIntersectionObserver() {
+      // Check if the element exists before observing
+      if (!this.$refs.aboutSection) {
+        console.warn('aboutSection ref not found');
+        return;
+      }
+
       const options = {
         root: null,
         rootMargin: '0px',

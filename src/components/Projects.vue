@@ -334,9 +334,9 @@
         <div class="project-item" ref="project4" :class="{ 'animate-project': projectVisibility[4] }" :style="{ transitionDelay: '0.1s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">COOS app</h3>
           <a style="padding-left: 1rem; font-weight: bold;" class="link"
-                                                    href="https://youtu.be/Jp6TfgUAibo?feature=shared" target="_blank">
+             href="https://youtu.be/Jp6TfgUAibo?feature=shared" target="_blank">
             Demo version before pivoting
-</a>
+          </a>
           <h4 style="padding-left: 1rem; font-weight: bold; width: 100%">Work in progress</h4>
           <ul>
             <li>
@@ -354,6 +354,7 @@
     </div>
   </div>
 </template>
+
 <style>
 a {
   margin-right: 4%;
@@ -477,6 +478,7 @@ progress {
   }
 }
 </style>
+
 <script>
 export default {
   data() {
@@ -486,8 +488,11 @@ export default {
     }
   },
   mounted() {
-    this.setupIntersectionObserver();
-    this.setupProjectObservers();
+    // Use $nextTick to ensure DOM is fully rendered before setting up observers
+    this.$nextTick(() => {
+      this.setupIntersectionObserver();
+      this.setupProjectObservers();
+    });
   },
   beforeUnmount() {
     if (this.techObserver) {
@@ -514,14 +519,17 @@ export default {
         });
       }, options);
 
-      this.techObserver.observe(this.$refs.techSection);
+      // Make sure the ref exists before observing
+      if (this.$refs.techSection) {
+        this.techObserver.observe(this.$refs.techSection);
+      }
     },
 
     setupProjectObservers() {
       const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.3 // Trigger when 30% of the project is visible
+        threshold: 0.3
       };
 
       this.projectObservers = [];
@@ -539,7 +547,7 @@ export default {
 
         this.projectObservers.push(observer);
 
-        // Observe each project element
+        // Observe each project element - make sure it exists first
         const projectRef = this.$refs[`project${i}`];
         if (projectRef) {
           observer.observe(projectRef);
