@@ -1,62 +1,13 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
-const educationSection = ref(null)
-const educationVisibility = ref([false, false])
-let educationObservers = []
-
-const setupEducationObservers = async () => {
-  // Wait for DOM to be fully rendered
-  await nextTick()
-
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.3 // Trigger when 30% of the education item is visible
-  }
-
-  educationObservers = []
-
-  // Create observers for each education item
-  for (let i = 0; i < 2; i++) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          educationVisibility.value[i] = true
-          observer.unobserve(entry.target)
-        }
-      })
-    }, options)
-
-    educationObservers.push(observer)
-
-    // Observe each education item element
-    const educationRef = document.querySelector(`[data-education-index="${i}"]`)
-    if (educationRef) {
-      observer.observe(educationRef)
-    } else {
-      console.warn(`Education element with data-education-index="${i}" not found`)
-    }
-  }
-}
-
-onMounted(() => {
-  setupEducationObservers()
-})
-
-onBeforeUnmount(() => {
-  if (educationObservers) {
-    educationObservers.forEach(observer => observer.disconnect())
-  }
-})
 </script>
 
 <template>
-  <div class="whole-ed" ref="educationSection">
+  <div class="whole-ed">
     <div class="education">
       <h1 class="edh" style="text-align: center;">Education & Certificates</h1>
       <br>
-      <div class="ed-item taltech" :data-education-index="0" :class="{ 'animate-education': educationVisibility[0] }" :style="{ transitionDelay: '0.1s' }">
+      <div class="ed-item taltech">
         <div class="ed-info-group">
           <img class="stack-img" src="~@/assets/taltech-logo.png">
           <div class="ed-info" style="padding-left: 2%">
@@ -78,7 +29,7 @@ onBeforeUnmount(() => {
 
       </div>
       <br>
-      <div class="ed-item" :data-education-index="1" :class="{ 'animate-education': educationVisibility[1] }" :style="{ transitionDelay: '0.2s' }">
+      <div class="ed-item">
         <div class="ed-info-group">
           <img class="stack-img" src="~@/assets/cambridge-logo.png">
           <div class="ed-info" style="padding-left: 2%">
@@ -110,19 +61,12 @@ onBeforeUnmount(() => {
 .ed-item {
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
   border-radius: 5%;
   align-items: center;
   padding: 2% 5% 2% 5%;
-  /* Animation properties */
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.ed-item.animate-education {
-  opacity: 1;
-  transform: translateY(0);
+  max-width: 85%; /* same as .w-item */
+  width: 100%;
+  margin: 0 auto;  /* center horizontally */
 }
 
 .whole-ed {
@@ -149,26 +93,23 @@ li {
   position: relative;
   padding-left: 20px;
   margin-left: 10px;
+  &:last-child{
+    border: 0px;
+    padding-bottom: 0;
+  }
+  &:before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 1px solid cornflowerblue;
+    box-shadow: 3px 3px 0px cornflowerblue;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: -1px;
+  }
 }
-
-li:last-child{
-  border: 0px;
-  padding-bottom: 0;
-}
-
-li:before{
-  content: '';
-  width: 15px;
-  height: 15px;
-  background: white;
-  border: 1px solid cornflowerblue;
-  box-shadow: 3px 3px 0px cornflowerblue;
-  border-radius: 50%;
-  position: absolute;
-  left: -10px;
-  top: -1px;
-}
-
 .time{
   color: black;
   font-family: sans-serif;
@@ -181,24 +122,6 @@ li:before{
   width: 100%;
   max-width: 12%;
   vertical-align: bottom;
-}
-.whole-ed h1 {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.link {
-  display: block;
-  margin: 5px 0;
-  color: cornflowerblue;
-  text-decoration: none;
-}
-
-.link:hover {
-  color: #6495ED;
-  text-decoration: underline;
 }
 
 @media (max-width: 1380px) {
@@ -226,5 +149,19 @@ li:before{
   .ed-timeline {
     display: none;
   }
+}
+.ed-item,
+.ed-info,
+.time,
+li,
+.whole-ed {
+  opacity: 1 !important;
+  color: #000000 !important;
+  font-size: 14px;
+}
+.edh {
+  opacity: 1 !important;
+  color: #000000 !important;
+  margin-left: 20%;
 }
 </style>
