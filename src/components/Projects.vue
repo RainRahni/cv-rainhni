@@ -1,5 +1,5 @@
 <template>
-  <div class="whole-tech" ref="techSection">
+  <div class="whole-tech">
     <div class="tech-stack">
       <h1 class="skill-header">Tech stack</h1>
       <div class="tech-list" :class="{ 'animate-tech': isTechVisible }">
@@ -269,7 +269,7 @@
           </ul>
         </div>
         <br>
-        <div class="project-item" ref="project1" :class="{ 'animate-project': projectVisibility[1] }" :style="{ transitionDelay: '0.1s' }">
+        <div class="project-item" ref="project1" :class="{ 'animate-project': projectVisibility[1] }" :style="{ transitionDelay: '0.2s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Post-office website</h3>
           <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/post-office-back" class="link"
              target="_blank">Backend repo</a>
@@ -291,7 +291,7 @@
           </ul>
         </div>
         <br>
-        <div class="project-item" ref="project2" :class="{ 'animate-project': projectVisibility[2] }" :style="{ transitionDelay: '0.1s' }">
+        <div class="project-item" ref="project2" :class="{ 'animate-project': projectVisibility[2] }" :style="{ transitionDelay: '0.3s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Calorie tracking website</h3>
           <a style="padding-left: 1rem; font-weight: bold;" href="https://github.com/RainRahni/barv-backend" class="link"
              target="_blank">Backend repo</a>
@@ -312,7 +312,7 @@
           </ul>
         </div>
         <br>
-        <div class="project-item" ref="project3" :class="{ 'animate-project': projectVisibility[3] }" :style="{ transitionDelay: '0.1s' }">
+        <div class="project-item" ref="project3" :class="{ 'animate-project': projectVisibility[3] }" :style="{ transitionDelay: '0.4s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Multiplayer shooting game</h3>
           <a style="padding-left: 1rem; font-weight: bold;" class="link"
              href="https://youtu.be/QyWzJtDD8QM?feature=shared&t=53s" target="_blank">
@@ -331,7 +331,7 @@
           </ul>
         </div>
         <br>
-        <div class="project-item" ref="project4" :class="{ 'animate-project': projectVisibility[4] }" :style="{ transitionDelay: '0.1s' }">
+        <div class="project-item" ref="project4" :class="{ 'animate-project': projectVisibility[4] }" :style="{ transitionDelay: '0.5s' }">
           <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">COOS app</h3>
           <a style="padding-left: 1rem; font-weight: bold;" class="link"
              href="https://youtu.be/Jp6TfgUAibo?feature=shared" target="_blank">
@@ -378,13 +378,12 @@ h1 {
 
 .project-item {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
   width: 80%;
   border-radius: 5%;
   padding: 3%;
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease;
 }
 
 .project-item.animate-project {
@@ -394,13 +393,12 @@ h1 {
 
 .tech-list {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
   width: 80%;
   border-radius: 12px;
   padding: 20px;
   opacity: 0;
   transform: translateX(-50px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease;
 }
 
 .tech-list.animate-tech {
@@ -441,9 +439,29 @@ div {
   width: 100%;
 }
 
+/* Custom styles for progress bar color */
 progress {
   width: 100%;
+  color: #4bdd52 !important;
 }
+
+progress::-webkit-progress-bar {
+  background-color: #f0f0f0; /* Light background for the track */
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4CAF50 !important;
+  border-radius: 5px;
+}
+
+/* For Firefox */
+progress::-moz-progress-bar {
+  background-color: #4CAF50 !important; /* Green color for the filled part */
+  border-radius: 5px;
+}
+
+
 .whole-tech {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -488,7 +506,6 @@ export default {
     }
   },
   mounted() {
-    // Use $nextTick to ensure DOM is fully rendered before setting up observers
     this.$nextTick(() => {
       this.setupIntersectionObserver();
       this.setupProjectObservers();
@@ -519,9 +536,11 @@ export default {
         });
       }, options);
 
-      // Make sure the ref exists before observing
-      if (this.$refs.techSection) {
-        this.techObserver.observe(this.$refs.techSection);
+      const techStackContainer = this.$el.querySelector('.tech-stack');
+      if (techStackContainer) {
+        this.techObserver.observe(techStackContainer);
+      } else {
+        console.warn("'.tech-stack' element not found for tech stack observer.");
       }
     },
 
@@ -529,30 +548,35 @@ export default {
       const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.3
+        threshold: 0.1 // Lower threshold to trigger earlier
       };
 
       this.projectObservers = [];
 
-      // Create observers for each project
-      for (let i = 0; i < 5; i++) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              this.projectVisibility[i] = true;
-              observer.unobserve(entry.target);
-            }
-          });
-        }, options);
+      // Use querySelectorAll to get all project items
+      const projectItems = this.$el.querySelectorAll('.project-item');
 
-        this.projectObservers.push(observer);
+      projectItems.forEach((projectElement, index) => {
+        if (projectElement) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                console.log(`Project ${index} is now visible`);
+                // Update the projectVisibility array
+                this.projectVisibility = this.projectVisibility.map((visible, i) =>
+                    i === index ? true : visible
+                );
+                observer.unobserve(entry.target);
+              }
+            });
+          }, options);
 
-        // Observe each project element - make sure it exists first
-        const projectRef = this.$refs[`project${i}`];
-        if (projectRef) {
-          observer.observe(projectRef);
+          this.projectObservers.push(observer);
+          observer.observe(projectElement);
         }
-      }
+      });
+
+      console.log(`Set up observers for ${projectItems.length} project items`);
     }
   }
 }

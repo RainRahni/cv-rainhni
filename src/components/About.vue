@@ -1,5 +1,5 @@
 <template>
-  <div class="whole-about" ref="aboutSection">
+  <div class="whole-about">
     <div class="coderPic" :class="{ 'animate-image': isVisible }">
       <div class="image-container">
         <img style="width:45%; float: right; margin: 15%" src="~@/assets/rainCoder.png">
@@ -23,7 +23,6 @@
            target="_blank">View Resume</a>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -139,15 +138,11 @@
 export default {
   data() {
     return {
-      isVisible: false,
-      observer: null
+      isVisible: false
     }
   },
   mounted() {
-    // Wait for the next tick to ensure DOM is rendered
-    this.$nextTick(() => {
-      this.setupIntersectionObserver();
-    });
+    this.setupIntersectionObserver();
   },
   beforeUnmount() {
     if (this.observer) {
@@ -156,28 +151,27 @@ export default {
   },
   methods: {
     setupIntersectionObserver() {
-      // Check if the element exists before observing
-      if (!this.$refs.aboutSection) {
-        console.warn('aboutSection ref not found');
-        return;
-      }
-
       const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.3
+        threshold: 0.3 // Trigger when 30% of the element is visible
       };
 
       this.observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             this.isVisible = true;
+            // Stop observing once it's visible so the animation doesn't re-trigger
             this.observer.unobserve(entry.target);
           }
         });
       }, options);
 
-      this.observer.observe(this.$refs.aboutSection);
+      // Use this.$el to reliably get the component's root DOM element
+      const el = this.$el;
+      if (el) {
+        this.observer.observe(el);
+      }
     }
   }
 }
