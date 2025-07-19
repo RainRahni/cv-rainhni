@@ -316,7 +316,7 @@
       max-width: 95%; /* Adjust for mobile */
     }
     .workExp {
-      font-size: 1px;
+      font-size: 55px;
     }
   }
   </style>
