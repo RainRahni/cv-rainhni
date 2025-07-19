@@ -98,7 +98,7 @@
 }
 
 @media(max-width: 1380px) {
-  .whole-about{
+  .whole-about {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -115,9 +115,11 @@
 
   .coderPic {
     display: flex;
-    flex-direction: row;
-    margin-left: 140px;
-    width: 40em;
+    justify-content: center; /* centers child horizontally */
+    align-items: center;
+    margin-left: 0; /* remove desktop offset */
+    width: 100%; /* make it responsive */
+    margin-top: 20px;
   }
 
   .image-container {
@@ -128,11 +130,18 @@
 
   .aboutHead {
     display: flex;
-    margin-left: 1%;
+    margin-left: 20%;
     width: 100%;
+    justify-content: center;
+  }
+
+  .about-text {
+    width: 90%; /* expand on smaller screens */
+    align-items: center;
   }
 }
 </style>
+
 
 <script>
 export default {
