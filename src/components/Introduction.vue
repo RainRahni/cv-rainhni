@@ -78,7 +78,6 @@ h1 {
 }
 .logoTwo {
   width: 5%;
-
 }
 .logoTwo:hover {
   filter: brightness(0) saturate(100%) invert(27%) sepia(43%) saturate(4094%) hue-rotate(218deg) brightness(99%)
@@ -89,7 +88,7 @@ h1 {
   width: 150px;
   text-align: center;
   border-radius: 20px 20px 20px 0px;
-  animation: dropFromTop 1s ;
+  animation: dropFromTop 1s;
 }
 
 .name {
@@ -117,7 +116,7 @@ img {
   color: cornflowerblue;
 }
 a {
-  color:cornflowerblue;
+  color: cornflowerblue;
 }
 .info-logo img:hover {
   filter: brightness(0) saturate(100%) invert(27%) sepia(43%) saturate(4094%) hue-rotate(218deg) brightness(99%)
@@ -128,7 +127,7 @@ a {
   overflow-wrap: break-word;
 }
 
-/* New styles for animated circles */
+/* Profile image container styles */
 .profp {
   position: relative;
   display: flex;
@@ -151,7 +150,6 @@ a {
   display: inline-block;
 }
 
-/* Inner border - cornflower blue, connected to image, appears first, half width */
 .profile-wrapper::before {
   content: '';
   position: absolute;
@@ -165,7 +163,6 @@ a {
   animation: borderAppear 2s ease-out;
 }
 
-/* Outer border - sky blue, wider, appears second, connects to inner */
 .profile-wrapper::after {
   content: '';
   position: absolute;
@@ -234,61 +231,76 @@ a {
   }
 }
 
+/* Mobile styles */
 @media(max-width: 1380px) {
-  .whole-intro{
+  .whole-intro {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    padding-top: 40px; /* move whole content down */
   }
+
   .intro-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 90%;
+    margin-top: 60px; /* push text block down */
   }
+
   .profp {
     padding-bottom: 10px;
+    margin-top: 40px; /* move image slightly down */
+    display: flex;
+    justify-content: center; /* center horizontally */
   }
+
+  .profile-container {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0; /* remove left offset on mobile */
+  }
+
   .info-logo {
     display: flex;
     justify-content: center;
     width: 100%;
   }
+
   .logo {
     width: 20px;
     height: 23px;
     margin-top: 8px !important;
   }
+
   .links {
     width: 130%;
   }
+
   .logoTwo {
     width: 30px;
   }
+
   .name {
     width: 10em;
   }
+
   .occupation {
     font-size: 20px;
   }
+
   .border-outer {
     width: 280px;
     height: 280px;
   }
+
   .border-inner {
     width: 240px;
     height: 240px;
   }
-  .profile-container {
-    width: 250px;
-    height: 250px;
-  }
 }
-
-
 </style>
-
-<script setup>
-// Your script setup content goes here
-</script>
