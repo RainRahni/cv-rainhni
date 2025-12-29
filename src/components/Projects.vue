@@ -332,10 +332,10 @@
         </div>
         <br>
         <div class="project-item" ref="project4" :class="{ 'animate-project': projectVisibility[4] }" :style="{ transitionDelay: '0.5s' }">
-          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">COOS app</h3>
+          <h3 style="padding-left: 1rem; font-weight: bold" class="project-name">Zueros</h3>
           <a style="padding-left: 1rem; font-weight: bold;" class="link"
-             href="https://youtu.be/Jp6TfgUAibo?feature=shared" target="_blank">
-            Demo version before pivoting
+             href="https://www.youtube.com/watch?v=klDYo4s-Q7Id" target="_blank">
+            Demo (contact me for access)
           </a>
           <h4 style="padding-left: 1rem; font-weight: bold; width: 100%">Work in progress</h4>
           <ul>
